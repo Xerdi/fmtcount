@@ -15,9 +15,9 @@ jobs:
           shell: bash
           options: --rm -i -v ${{ github.workspace }}:/build
           run: |
-            make -C fmtcount/trunk test
+            make -C trunk test
       - name: Archive Test results (2022)
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: ${{ github.workspace }}/fmtcount/trunk
+          path: ${{ github.workspace }}
