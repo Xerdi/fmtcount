@@ -18,6 +18,7 @@ jobs:
             make -C trunk test
       - name: Archive Test results (Latest)
         uses: actions/upload-artifact@v3
+        if: ${{ always() }}
         with:
           name: build
           path: ${{ github.workspace }}
