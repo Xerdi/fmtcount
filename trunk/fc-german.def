@@ -67,9 +67,9 @@
 }%
 \global\let\@@tenstringgerman\@@tenstringgerman
 %    \end{macrocode}
-% |\einhundert| is set to |einhundert| by default, user can
+% \cs{einhundert} is set to |einhundert| by default, user can
 % redefine this command to just |hundert| if required, similarly
-% for |\eintausend|.
+% for \cs{eintausend}.
 %    \begin{macrocode}
 \providecommand*{\einhundert}{einhundert}%
 \providecommand*{\eintausend}{eintausend}%
