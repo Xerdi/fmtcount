@@ -127,9 +127,11 @@ FÜNF
 Test 5
 
 SECHS
-SIEBEN
 
 Test 6
+
+SIEBEN
+
 Test 7
 
 ACHT

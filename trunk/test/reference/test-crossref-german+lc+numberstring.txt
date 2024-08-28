@@ -126,9 +126,11 @@ sechs
 Test 6
 
 sieben
-acht
 
 Test 7
+
+acht
+
 Test 8
 
 neun
@@ -172,9 +174,11 @@ achtzehn
 Test 18
 
 neunzehn
-zwanzig
 
 Test 19
+
+zwanzig
+
 Test 20
 
 2

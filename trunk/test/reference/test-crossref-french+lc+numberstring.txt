@@ -116,12 +116,15 @@ trois
 Test 3
 
 quatre
-cinq
-six
 
 Test 4
 
+cinq
+
 Test 5
+
+six
+
 Test 6
 
 sept
