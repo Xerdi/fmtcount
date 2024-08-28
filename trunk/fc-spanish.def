@@ -92,7 +92,7 @@
     \or trece%
     \or catorce%
     \or quince%
-    \or diecis\'eis%
+    \or dieciséis%
     \or diecisiete%
     \or dieciocho%
     \or diecinueve%
@@ -106,11 +106,11 @@
   \ifcase#1\relax
     veinte%
     \or veintiuno%
-    \or veintid\'os%
-    \or veintitr\'es%
+    \or veintidós%
+    \or veintitrés%
     \or veinticuatro%
     \or veinticinco%
-    \or veintis\'eis%
+    \or veintiséis%
     \or veintisiete%
     \or veintiocho%
     \or veintinueve%
@@ -124,11 +124,11 @@
   \ifcase#1\relax
     veinte%
     \or veintiuna%
-    \or veintid\'os%
-    \or veintitr\'es%
+    \or veintidós%
+    \or veintitrés%
     \or veinticuatro%
     \or veinticinco%
-    \or veintis\'eis%
+    \or veintiséis%
     \or veintisiete%
     \or veintiocho%
     \or veintinueve%
@@ -236,7 +236,7 @@
     \or Trece%
     \or Catorce%
     \or Quince%
-    \or Diecis\'eis%
+    \or Dieciséis%
     \or Diecisiete%
     \or Dieciocho%
     \or Diecinueve%
@@ -250,11 +250,11 @@
   \ifcase#1\relax
     Veinte%
     \or Veintiuno%
-    \or Veintid\'os%
-    \or Veintitr\'es%
+    \or Veintidós%
+    \or Veintitrés%
     \or Veinticuatro%
     \or Veinticinco%
-    \or Veintis\'eis%
+    \or Veintiséis%
     \or Veintisiete%
     \or Veintiocho%
     \or Veintinueve%
@@ -268,11 +268,11 @@
   \ifcase#1\relax
     Veinte%
     \or Veintiuna%
-    \or Veintid\'os%
-    \or Veintitr\'es%
+    \or Veintidós%
+    \or Veintitrés%
     \or Veinticuatro%
     \or Veinticinco%
-    \or Veintis\'eis%
+    \or Veintiséis%
     \or Veintisiete%
     \or Veintiocho%
     \or Veintinueve%
@@ -401,7 +401,7 @@
   \let\@teenthstring=\@@teenthstringspanish
   \let\@tenthstring=\@@tenthstringspanish
   \let\@hundredthstring=\@@hundredthstringspanish
-  \def\@thousandth{mil\'esimo}%
+  \def\@thousandth{milésimo}%
   \@@ordinalstringspanish{#1}{#2}%
 }%
 \global\let\@ordinalstringMspanish\@ordinalstringMspanish
@@ -414,7 +414,7 @@
   \let\@teenthstring=\@@teenthstringFspanish
   \let\@tenthstring=\@@tenthstringFspanish
   \let\@hundredthstring=\@@hundredthstringFspanish
-  \def\@thousandth{mil\'esima}%
+  \def\@thousandth{milésima}%
   \@@ordinalstringspanish{#1}{#2}%
 }%
 \global\let\@ordinalstringFspanish\@ordinalstringFspanish
@@ -431,7 +431,7 @@
   \let\@teenthstring=\@@Teenthstringspanish
   \let\@tenthstring=\@@Tenthstringspanish
   \let\@hundredthstring=\@@Hundredthstringspanish
-  \def\@thousandth{Mil\'esimo}%
+  \def\@thousandth{Milésimo}%
   \@@ordinalstringspanish{#1}{#2}%
 }
 \global\let\@OrdinalstringMspanish\@OrdinalstringMspanish
@@ -444,7 +444,7 @@
   \let\@teenthstring=\@@TeenthstringFspanish
   \let\@tenthstring=\@@TenthstringFspanish
   \let\@hundredthstring=\@@HundredthstringFspanish
-  \def\@thousandth{Mil\'esima}%
+  \def\@thousandth{Milésima}%
   \@@ordinalstringspanish{#1}{#2}%
 }%
 \global\let\@OrdinalstringFspanish\@OrdinalstringFspanish
@@ -466,7 +466,7 @@
     \or cuarto%
     \or quinto%
     \or sexto%
-    \or s\'eptimo%
+    \or séptimo%
     \or octavo%
     \or noveno%
   \fi
@@ -477,15 +477,15 @@
 %    \begin{macrocode}
 \newcommand*\@@tenthstringspanish[1]{%
   \ifcase#1\relax
-    \or d\'ecimo%
-    \or vig\'esimo%
-    \or trig\'esimo%
-    \or cuadrag\'esimo%
-    \or quincuag\'esimo%
-    \or sexag\'esimo%
-    \or septuag\'esimo%
-    \or octog\'esimo%
-    \or nonag\'esimo%
+    \or décimo%
+    \or vigésimo%
+    \or trigésimo%
+    \or cuadragésimo%
+    \or quincuagésimo%
+    \or sexagésimo%
+    \or septuagésimo%
+    \or octogésimo%
+    \or nonagésimo%
   \fi
 }%
 \global\let\@@tenthstringspanish\@@tenthstringspanish
@@ -494,14 +494,14 @@
 %    \begin{macrocode}
 \newcommand*\@@teenthstringspanish[1]{%
   \ifcase#1\relax
-    d\'ecimo%
-    \or und\'ecimo%
-    \or duod\'ecimo%
+    décimo%
+    \or undécimo%
+    \or duodécimo%
     \or decimotercero%
     \or decimocuarto%
     \or decimoquinto%
     \or decimosexto%
-    \or decimos\'eptimo%
+    \or decimoséptimo%
     \or decimoctavo%
     \or decimonoveno%
   \fi
@@ -512,15 +512,15 @@
 %    \begin{macrocode}
 \newcommand*\@@hundredthstringspanish[1]{%
   \ifcase#1\relax
-    \or cent\'esimo%
-    \or ducent\'esimo%
-    \or tricent\'esimo%
-    \or cuadringent\'esimo%
-    \or quingent\'esimo%
-    \or sexcent\'esimo%
-    \or septing\'esimo%
-    \or octingent\'esimo%
-    \or noningent\'esimo%
+    \or centésimo%
+    \or ducentésimo%
+    \or tricentésimo%
+    \or cuadringentésimo%
+    \or quingentésimo%
+    \or sexcentésimo%
+    \or septingésimo%
+    \or octingentésimo%
+    \or noningentésimo%
   \fi
 }%
 \global\let\@@hundredthstringspanish\@@hundredthstringspanish
@@ -536,7 +536,7 @@
     \or cuarta%
     \or quinta%
     \or sexta%
-    \or s\'eptima%
+    \or séptima%
     \or octava%
     \or novena%
   \fi
@@ -547,15 +547,15 @@
 %    \begin{macrocode}
 \newcommand*\@@tenthstringFspanish[1]{%
   \ifcase#1\relax
-    \or d\'ecima%
-    \or vig\'esima%
-    \or trig\'esima%
-    \or cuadrag\'esima%
-    \or quincuag\'esima%
-    \or sexag\'esima%
-    \or septuag\'esima%
-    \or octog\'esima%
-    \or nonag\'esima%
+    \or décima%
+    \or vigésima%
+    \or trigésima%
+    \or cuadragésima%
+    \or quincuagésima%
+    \or sexagésima%
+    \or septuagésima%
+    \or octogésima%
+    \or nonagésima%
   \fi
 }%
 \global\let\@@tenthstringFspanish\@@tenthstringFspanish
@@ -564,14 +564,14 @@
 %    \begin{macrocode}
 \newcommand*\@@teenthstringFspanish[1]{%
   \ifcase#1\relax
-    d\'ecima%
-    \or und\'ecima%
-    \or duod\'ecima%
+    décima%
+    \or undécima%
+    \or duodécima%
     \or decimotercera%
     \or decimocuarta%
     \or decimoquinta%
     \or decimosexta%
-    \or decimos\'eptima%
+    \or decimoséptima%
     \or decimoctava%
     \or decimonovena%
   \fi
@@ -582,15 +582,15 @@
 %    \begin{macrocode}
 \newcommand*\@@hundredthstringFspanish[1]{%
   \ifcase#1\relax
-    \or cent\'esima%
-    \or ducent\'esima%
-    \or tricent\'esima%
-    \or cuadringent\'esima%
-    \or quingent\'esima%
-    \or sexcent\'esima%
-    \or septing\'esima%
-    \or octingent\'esima%
-    \or noningent\'esima%
+    \or centésima%
+    \or ducentésima%
+    \or tricentésima%
+    \or cuadringentésima%
+    \or quingentésima%
+    \or sexcentésima%
+    \or septingésima%
+    \or octingentésima%
+    \or noningentésima%
   \fi
 }%
 \global\let\@@hundredthstringFspanish\@@hundredthstringFspanish
@@ -606,7 +606,7 @@
     \or Cuarto%
     \or Quinto%
     \or Sexto%
-    \or S\'eptimo%
+    \or Séptimo%
     \or Octavo%
     \or Noveno%
   \fi
@@ -617,15 +617,15 @@
 %    \begin{macrocode}
 \newcommand*\@@Tenthstringspanish[1]{%
   \ifcase#1\relax
-    \or D\'ecimo%
-    \or Vig\'esimo%
-    \or Trig\'esimo%
-    \or Cuadrag\'esimo%
-    \or Quincuag\'esimo%
-    \or Sexag\'esimo%
-    \or Septuag\'esimo%
-    \or Octog\'esimo%
-    \or Nonag\'esimo%
+    \or Décimo%
+    \or Vigésimo%
+    \or Trigésimo%
+    \or Cuadragésimo%
+    \or Quincuagésimo%
+    \or Sexagésimo%
+    \or Septuagésimo%
+    \or Octogésimo%
+    \or Nonagésimo%
   \fi
 }%
 \global\let\@@Tenthstringspanish\@@Tenthstringspanish
@@ -634,14 +634,14 @@
 %    \begin{macrocode}
 \newcommand*\@@Teenthstringspanish[1]{%
   \ifcase#1\relax
-    D\'ecimo%
-    \or Und\'ecimo%
-    \or Duod\'ecimo%
+    Décimo%
+    \or Undécimo%
+    \or Duodécimo%
     \or Decimotercero%
     \or Decimocuarto%
     \or Decimoquinto%
     \or Decimosexto%
-    \or Decimos\'eptimo%
+    \or Decimoséptimo%
     \or Decimoctavo%
     \or Decimonoveno%
   \fi
@@ -652,15 +652,15 @@
 %    \begin{macrocode}
 \newcommand*\@@Hundredthstringspanish[1]{%
   \ifcase#1\relax
-    \or Cent\'esimo%
-    \or Ducent\'esimo%
-    \or Tricent\'esimo%
-    \or Cuadringent\'esimo%
-    \or Quingent\'esimo%
-    \or Sexcent\'esimo%
-    \or Septing\'esimo%
-    \or Octingent\'esimo%
-    \or Noningent\'esimo%
+    \or Centésimo%
+    \or Ducentésimo%
+    \or Tricentésimo%
+    \or Cuadringentésimo%
+    \or Quingentésimo%
+    \or Sexcentésimo%
+    \or Septingésimo%
+    \or Octingentésimo%
+    \or Noningentésimo%
   \fi
 }%
 \global\let\@@Hundredthstringspanish\@@Hundredthstringspanish
@@ -676,7 +676,7 @@
     \or Cuarta%
     \or Quinta%
     \or Sexta%
-    \or S\'eptima%
+    \or Séptima%
     \or Octava%
     \or Novena%
   \fi
@@ -687,15 +687,15 @@
 %    \begin{macrocode}
 \newcommand*\@@TenthstringFspanish[1]{%
   \ifcase#1\relax
-    \or D\'ecima%
-    \or Vig\'esima%
-    \or Trig\'esima%
-    \or Cuadrag\'esima%
-    \or Quincuag\'esima%
-    \or Sexag\'esima%
-    \or Septuag\'esima%
-    \or Octog\'esima%
-    \or Nonag\'esima%
+    \or Décima%
+    \or Vigésima%
+    \or Trigésima%
+    \or Cuadragésima%
+    \or Quincuagésima%
+    \or Sexagésima%
+    \or Septuagésima%
+    \or Octogésima%
+    \or Nonagésima%
   \fi
 }%
 \global\let\@@TenthstringFspanish\@@TenthstringFspanish
@@ -704,14 +704,14 @@
 %    \begin{macrocode}
 \newcommand*\@@TeenthstringFspanish[1]{%
   \ifcase#1\relax
-    D\'ecima%
-    \or Und\'ecima%
-    \or Duod\'ecima%
+    Décima%
+    \or Undécima%
+    \or Duodécima%
     \or Decimotercera%
     \or Decimocuarta%
     \or Decimoquinta%
     \or Decimosexta%
-    \or Decimos\'eptima%
+    \or Decimoséptima%
     \or Decimoctava%
     \or Decimonovena%
   \fi
@@ -722,15 +722,15 @@
 %    \begin{macrocode}
 \newcommand*\@@HundredthstringFspanish[1]{%
   \ifcase#1\relax
-    \or Cent\'esima%
-    \or Ducent\'esima%
-    \or Tricent\'esima%
-    \or Cuadringent\'esima%
-    \or Quingent\'esima%
-    \or Sexcent\'esima%
-    \or Septing\'esima%
-    \or Octingent\'esima%
-    \or Noningent\'esima%
+    \or Centésima%
+    \or Ducentésima%
+    \or Tricentésima%
+    \or Cuadringentésima%
+    \or Quingentésima%
+    \or Sexcentésima%
+    \or Septingésima%
+    \or Octingentésima%
+    \or Noningentésima%
   \fi
 }%
 \global\let\@@HundredthstringFspanish\@@HundredthstringFspanish
