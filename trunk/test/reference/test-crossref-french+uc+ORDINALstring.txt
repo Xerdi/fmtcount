@@ -3,129 +3,150 @@ Contents
 PREMIER
 Sample
 
-1
+2
 
 DEUXI
 Test ÈME
 2
 
-2
+3
 
 TROISI
 Test ÈME
 3
 
-2
+3
 
 QUATRI
 Test 4 ÈME
 
-2
+3
 
 CINQUI
 Test 5ÈME
 
-2
+3
 
 SIXI
 Test
 ÈME
 6
 
-2
+3
 
 SEPTI
 TestÈME
 7
 
-2
+3
 
 HUITI
 TestÈME
 8
 
-2
+3
 
 NEUVI
 Test ÈME
 9
 
-2
+3
 
 DIXI
 Test
 ÈME
 10
 
-2
+3
 
 ONZI
 Test
 ÈME
 11
 
-2
+3
 
 DOUZI
 Test ÈME
 12
 
-2
+3
 
 TREIZI
 Test ÈME
 13
 
-2
+3
 
 QUATORZI
 Test 14 ÈME
 
-2
+3
 
 QUINZI
 Test 15
 ÈME
 
-2
+3
 
 SEIZI
 Test
 ÈME
 16
 
-2
+3
 
 DIX-SEPTI
 Test 17 ÈME
 
-2
+3
 
 DIX-HUITI
 Test 18 ÈME
 
-2
+3
 
 DIX-NEUVI
 Test 19 ÈME
 
-2
+3
 
 VINGTI
 Test 20
 ÈME
 
-2
+3
 
-PREMIER
+VINGT-ET-UNI
+Test 21
+ÈME
+
+3
+
+VINGT-DEUXI
+Test 22
+ÈME
+
+3
+
+VINGT-TROISI
+Test 23
+ÈME
+
+3
+
+1
+
+PREMIER
 
 Sample
 
 Test cross-reference to section PREMIER, DEUXIÈME, TROISIÈME, QUATRIÈME, CINQUIÈME, SIXIÈME, SEPTIÈME, HUITIÈME, NEUVIÈME,
 DIXIÈME, ONZIÈME, DOUZIÈME, TREIZIÈME, QUATORZIÈME, QUINZIÈME,
-SEIZIÈME, DIX-SEPTIÈME, DIX-HUITIÈME, DIX-NEUVIÈME, and VINGTIÈME.
+SEIZIÈME, DIX-SEPTIÈME, DIX-HUITIÈME, DIX-NEUVIÈME, VINGTIÈME,
+VINGT-ET-UNIÈME, VINGT-DEUXIÈME, and VINGT-TROISIÈME.
 
-1
+2
 
 DEUXIÈME
 
@@ -201,6 +222,17 @@ VINGTIÈME
 
 Test 20
 
-2
+VINGT-ET-UNIÈME
+
+Test 21
+
+VINGT-DEUXIÈME
+
+Test 22
+
+VINGT-TROISIÈME
+
+Test 23
+3
 
 
