@@ -10,6 +10,7 @@ README
 *.ilg
 *.ind
 *.ins
+*.ist
 *.log
 *.tex
 *.out

@@ -7,3 +7,6 @@
 *.glo
 *.idx
 *.out
+test-crossref-*.tex
+test/tests
+test/pdftests
