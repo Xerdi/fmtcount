@@ -143,7 +143,6 @@
     \let\@teenstring=\@@teenstringdutch%
     \let\@tenstring=\@@tenstringdutch%
     \def\@hundred{honderd}\def\@thousand{duizend}%
-    \def\@andname{en}%
     \@@numberstringdutch{#1}{#2}%
 }%
 \global\let\@numberstringMdutch\@numberstringMdutch
@@ -322,7 +321,6 @@
 %    \begin{macrocode}
 \newcommand*{\@OrdinalstringMdutch}[2]{%
     \@ordinalstringMdutch{#1}{\@@num@str}%
-    \def\@andname{en}%
     \def\@hundred{Honderd}\def\@thousand{Duizend}%
     \def\@hundredth{Honderdste}\def\@thousandth{Duizendste}%
     \edef#2{\noexpand\MakeUppercase\expandonce\@@num@str}%
@@ -350,7 +348,11 @@
     \else
     \ifnum\@tmpstrctr=0\relax
     \else
-    \eappto#2{\@unitstring{\@tmpstrctr}en}%
+    \ifnum\@tmpstrctr=2\relax\def\@andname{ën}%
+    \else\ifnum\@tmpstrctr=3\relax\def\@andname{ën}%
+    \else\def\@andname{en}%
+    \fi\fi%
+    \eappto#2{\@unitstring{\@tmpstrctr}\@andname}%
     \fi
     \@tmpstrctr=#1\relax
     \divide\@tmpstrctr by 10\relax
@@ -370,7 +372,11 @@
     \else
     \ifnum\@tmpstrctr=0\relax
     \else
-    \eappto#2{\@unitstring{\@tmpstrctr}-en-}%
+    \ifnum\@tmpstrctr=2\relax\def\@andname{ën}%
+    \else\ifnum\@tmpstrctr=3\relax\def\@andname{ën}%
+    \else\def\@andname{en}%
+    \fi\fi%
+    \eappto#2{\@unitstring{\@tmpstrctr}\@andname}%
     \fi
     \@tmpstrctr=#1\relax
     \divide\@tmpstrctr by 10\relax
