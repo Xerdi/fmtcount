@@ -29,7 +29,7 @@ LANG_shortenc:=	 dutch\
 	 brazilian\
 	 spanish
 
-LANG_shortgo:=dutch english french italian
+LANG_shortgo:=english french italian
 
 # note: french cannot be tested with babel + tex4ht engine due to tex4ht problem with babel thin space used in
 # french before :;!?, see https://puszcza.gnu.org.ua/bugs/?213.
@@ -81,6 +81,7 @@ $(foreach LANG,$(LANG_short),$(eval CONTENTSNAME_$(LANG):=))
 define DEF_CONTENTSNAME
 $(eval CONTENTSNAME_$(1):=\n\\def\\contentsname{$(2)}\n)
 endef
+$(call DEF_CONTENTSNAME,dutch,Inhoudsopgave)
 $(call DEF_CONTENTSNAME,german,Inhaltsverzeichnis)
 $(call DEF_CONTENTSNAME,germanb,Inhaltsverzeichnis)
 $(call DEF_CONTENTSNAME,ngerman,Inhaltsverzeichnis)
