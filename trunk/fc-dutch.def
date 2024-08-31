@@ -24,7 +24,7 @@
 \newcommand*\@@unitstringdutch[1]{%
     \ifcase#1%
     nul%
-    \or een%
+    \or een% één and \'e\'en not working atm
     \or twee%
     \or drie%
     \or vier%
@@ -80,8 +80,8 @@
 %    \begin{macrocode}
 \providecommand*{\honderd}{honderd}%
 \providecommand*{\duizend}{duizend}%
-\global\let\honderd\honderd%
-\global\let\duizend\duizend%
+\global\let\honderd\honderd
+\global\let\duizend\duizend
 %    \end{macrocode}
 % The numberstring implementation:
 %    \begin{macrocode}
@@ -127,7 +127,7 @@
     \def#2{null}%
     \else
     \ifnum\@strctr=1\relax
-    \appto#2{een}%
+    \appto#2{een}% één and \'e\'en not working atm
     \else
     \@@numberunderhundreddutch{\@strctr}{#2}%
     \fi
@@ -177,7 +177,7 @@
 \newcommand*\@@unitthstringdutch[1]{%
     \ifcase#1%
     nulde%
-    \or eerste%
+    \or eerste% éérste and \'e\'erste not working atm
     \or tweede%
     \or derde%
     \or vierde%
@@ -348,6 +348,10 @@
     \else
     \ifnum\@tmpstrctr=0\relax
     \else
+%    \end{macrocode}
+% For digits ending with an `e', a trema gets added for \cs{@andname}.
+% Take for example drieëntwintig or tweeënveertig.
+%    \begin{macrocode}
     \ifnum\@tmpstrctr=2\relax\def\@andname{ën}%
     \else\ifnum\@tmpstrctr=3\relax\def\@andname{ën}%
     \else\def\@andname{en}%
@@ -372,6 +376,9 @@
     \else
     \ifnum\@tmpstrctr=0\relax
     \else
+%    \end{macrocode}
+% Again, for digits ending with an `e', a trema gets added for \cs{@andname} (drieëntwintig or tweeënveertig).
+%    \begin{macrocode}
     \ifnum\@tmpstrctr=2\relax\def\@andname{ën}%
     \else\ifnum\@tmpstrctr=3\relax\def\@andname{ën}%
     \else\def\@andname{en}%
