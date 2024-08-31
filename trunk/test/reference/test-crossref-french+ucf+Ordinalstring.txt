@@ -3,111 +3,128 @@ Contents
 Premier
 Sample
 
-1
+2
 
 Deuxième
 Test 2
 
-2
+3
 
 Troisième
 Test 3
 
-2
+3
 
 Quatrième
 Test 4
 
-2
+3
 
 Cinquième
 Test 5
 
-2
+3
 
 Sixième
 Test 6
 
-2
+3
 
 Septième
 Test 7
 
-2
+3
 
 Huitième
 Test 8
 
-2
+3
 
 Neuvième
 Test 9
 
-2
+3
 
 Dixième
 Test 10
 
-2
+3
 
 Onzième
 Test 11
 
-2
+3
 
 Douzième
 Test 12
 
-2
+3
 
 Treizième
 Test 13
 
-2
+3
 
 Quatorzième
 Test 14
 
-2
+3
 
 Quinzième
 Test 15
 
-2
+3
 
 Seizième
 Test 16
 
-2
+3
 
 Dix-septième
 Test 17
 
-2
+3
 
 Dix-huitième
 Test 18
 
-2
+3
 
 Dix-neuvième
 Test 19
 
-2
+3
 
 Vingtième
 Test 20
 
-2
+3
 
-Premier
+Vingt-et-unième
+Test 21
+
+3
+
+Vingt-deuxième
+Test 22
+
+3
+
+Vingt-troisième
+Test 23
+
+3
+
+1
+
+Premier
 
 Sample
 
 Test cross-reference to section Premier, Deuxième, Troisième, Quatrième, Cinquième, Sixième, Septième, Huitième, Neuvième, Dixième, Onzième, Douzième,
-Treizième, Quatorzième, Quinzième, Seizième, Dix-septième, Dix-huitième, Dixneuvième, and Vingtième.
+Treizième, Quatorzième, Quinzième, Seizième, Dix-septième, Dix-huitième, Dixneuvième, Vingtième, Vingt-et-unième, Vingt-deuxième, and Vingt-troisième.
 
-1
+2
 
 Deuxième
 
@@ -182,6 +199,17 @@ Vingtième
 
 Test 20
 
-2
+Vingt-et-unième
+
+Test 21
+
+Vingt-deuxième
+
+Test 22
+
+Vingt-troisième
+
+Test 23
+3
 
 

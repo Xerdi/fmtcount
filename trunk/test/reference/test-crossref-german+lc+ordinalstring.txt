@@ -3,112 +3,130 @@ Contents
 erster
 Sample
 
-1
+2
 
 zweiter
 Test 2
 
-2
+3
 
 dritter
 Test 3
 
-2
+3
 
 vierter
 Test 4
 
-2
+3
 
 fünfter
 Test 5
 
-2
+3
 
 sechster
 Test 6
 
-2
+3
 
 siebter
 Test 7
 
-2
+3
 
 achter
 Test 8
 
-2
+3
 
 neunter
 Test 9
 
-2
+3
 
 zehnter
 Test 10
 
-2
+3
 
 elfter
 Test 11
 
-2
+3
 
 zwölfter
 Test 12
 
-2
+3
 
 dreizehnter
 Test 13
 
-2
+3
 
 vierzehnter
 Test 14
 
-2
+3
 
 fünfzehnter
 Test 15
 
-2
+3
 
 sechzehnter
 Test 16
 
-2
+3
 
 siebzehnter
 Test 17
 
-2
+3
 
 achtzehnter
 Test 18
 
-2
+3
 
 neunzehnter
 Test 19
 
-2
+3
 
 zwanzigster
 Test 20
 
-2
+3
 
-erster
+einundzwanzigster
+Test 21
+
+3
+
+zweiundzwanzigster
+Test 22
+
+3
+
+dreiundzwanzigster
+Test 23
+
+3
+
+1
+
+erster
 
 Sample
 
 Test cross-reference to section erster, zweiter, dritter, vierter, fünfter, sechster,
 siebter, achter, neunter, zehnter, elfter, zwölfter, dreizehnter, vierzehnter, fünfzehnter,
-sechzehnter, siebzehnter, achtzehnter, neunzehnter, and zwanzigster.
+sechzehnter, siebzehnter, achtzehnter, neunzehnter, zwanzigster, einundzwanzigster,
+zweiundzwanzigster, and dreiundzwanzigster.
 
-1
+2
 
 zweiter
 
@@ -186,6 +204,17 @@ zwanzigster
 
 Test 20
 
-2
+einundzwanzigster
+
+Test 21
+
+zweiundzwanzigster
+
+Test 22
+
+dreiundzwanzigster
+
+Test 23
+3
 
 

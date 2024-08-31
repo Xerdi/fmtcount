@@ -355,6 +355,149 @@ sub get_numberstringenglish{
    $name;
 }
 
+@unitthstringdutch = ('nulste',
+                      'eerste',
+                      'tweede',
+                      'derde',
+                      'vierde',
+                      'vijfde',
+                      'zesde',
+                      'zevende',
+                      'achtste',
+                      'negende');
+
+@tenthstringdutch  = ('',
+                      'tiende',
+                      'twintigste',
+                      'dertigste',
+                      'veertigste',
+                      'vijftigste',
+                      'zestigste',
+                      'zeventigste',
+                      'tachtigste',
+                      'negentigste');
+
+@teenthstringdutch = ('tiende',
+                      'elfde',
+                      'twaalfde',
+                      'dertien',
+                      'veertiende',
+                      'vijftiende',
+                      'zestiende',
+                      'zeventiende',
+                      'achttiende',
+                      'negentiende');
+
+@unitstringdutch = ('nul',
+                    'één',
+                    'twee',
+                    'drie',
+                    'vier',
+                    'vijf',
+                    'zes',
+                    'zeven',
+                    'acht',
+                    'negen');
+
+@teenstringdutch = ('tien',
+                     'elf',
+                     'twaalf',
+                     'dertien',
+                     'veertien',
+                     'vijftien',
+                     'zestien',
+                     'zeventien',
+                     'achttien',
+                     'negentien');
+
+@tenstringdutch  = ('',
+                     'tien',
+                     'twintig',
+                     'dertig',
+                     'veertig',
+                     'vijftig',
+                     'zestig',
+                     'zeventig',
+                     'tachtig',
+                     'negentig');
+
+$hundrednamedutch    = "honderd";
+$hundredthnamedutch  = "honderdste";
+$thousandnamedutch   = "duizend";
+$thousandthnamedutch = "duizendste";
+
+sub get_numberstringdutch {
+    local($num) = @_;
+    local($name) = "";
+
+    unless (($num >= 1000000) || ($num < 0)) {
+        if ($num >= 1000) {
+            local($thousandsdutch) = &get_numberstringdutch(int($num / 1000));
+            $name .= $thousandsdutch;
+
+            if ($num % 1000 > 0) {
+                $name .= " $thousandnamedutch";
+            } else {
+                $name .= " $thousandthnamedutch";
+            }
+
+            $num = $num % 1000;
+        }
+
+        if ($num >= 100) {
+            if ($_[0] >= 1000) { $name .= " "; }
+
+            local($hundredsdutch) = &get_numberstringdutch(int($num / 100));
+            $name .= $hundredsdutch;
+
+            if ($num % 100 > 0) {
+                $name .= " $hundrednamedutch";
+            } else {
+                $name .= " $hundredthnamedutch";
+            }
+
+            $num = $num % 100;
+        }
+
+        if (($_[0] > 100) && ($_[0] % 100 > 0)) { $name .= " en "; }
+
+        if ($num >= 20) {
+            local($tens) = int($num / 10);
+            local($units) = $num % 10;
+
+            # Handle special "ën" for 2 and 3 in numbers like 22, 23, etc.
+            if ($units == 2 || $units == 3) {
+                $name .= $unitstringdutch[$units] . "ën" . $tenstringdutch[$tens];
+            } else {
+                if ($units > 0) {
+                    $name .= $tenstringdutch[$tens] . 'en' . $unitstringdutch[$units];
+                } else {
+                    $name .= $tenthstringdutch[$tens];
+                }
+            }
+
+            # Handle "ste" or "de" suffix
+            if ($units > 0) {
+                $name .= ($units == 2 || $units == 3) ? 'ste' : 'e';
+            } else {
+                $name .= 'ste';
+            }
+        }
+
+        if (($num >= 10) && ($num < 20)) {
+            $name .= $teenthstringdutch[$num % 10] . 'de';
+        } elsif (($num % 10 > 0) || ($_[0] == 0)) {
+            if ($num > 20 && ($num % 10 == 2 || $num % 10 == 3)) {
+                $name .= $unitstringdutch[$num % 10] . 'e';
+            } else {
+                $name .= $unitthstringdutch[$num % 10];
+            }
+        }
+    }
+
+    $name;
+}
+
 @unitthstringfrench = ('zeroi\`eme',
                  'uni\`eme',
                  'deuxi\`eme',
@@ -1092,7 +1235,11 @@ sub get_numberstringgerman{
 sub get_numberstring{
    local($val,$gender) = @_;
 
-   if ($default_language eq 'french')
+   if ($default_language eq 'dutch')
+   {
+      &get_numberstringdutch($val,$gender);
+   }
+   elsif ($default_language eq 'french')
    {
       &get_numberstringfrench($val,$gender);
    }
@@ -1422,6 +1569,78 @@ sub do_cmd_storeNUMBERstringnum{
    $fmtcntvar{$key} = uc(&get_numberstring($val, $gender));
 
    $_;
+}
+
+sub get_ordinalstringdutch {
+    local($num) = @_;
+    local($name) = "";
+
+    unless (($num >= 1000000) || ($num < 0)) {
+        if ($num >= 1000) {
+            local($thousandsdutch) = &get_numberstringdutch(int($num / 1000));
+            $name .= $thousandsdutch;
+
+            if ($num % 1000 > 0) {
+                $name .= " $thousandnamedutch";
+            } else {
+                $name .= " $thousandthnamedutch";
+            }
+
+            $num = $num % 1000;
+        }
+
+        if ($num >= 100) {
+            if ($_[0] >= 1000) { $name .= " "; }
+
+            local($hundredsdutch) = &get_numberstringdutch(int($num / 100));
+            $name .= $hundredsdutch;
+
+            if ($num % 100 > 0) {
+                $name .= " $hundrednamedutch";
+            } else {
+                $name .= " $hundredthnamedutch";
+            }
+
+            $num = $num % 100;
+        }
+
+        if (($_[0] > 100) && ($_[0] % 100 > 0)) { $name .= " en "; }
+
+        if ($num >= 20) {
+            local($tens) = int($num / 10);
+            local($units) = $num % 10;
+
+            # Handle special "ën" for 2 and 3 in numbers like 22, 23, etc.
+            if ($units == 2 || $units == 3) {
+                $name .= $unitstringdutch[$units] . "ën" . $tenstringdutch[$tens];
+            } else {
+                if ($units > 0) {
+                    $name .= $tenstringdutch[$tens] . 'en' . $unitstringdutch[$units];
+                } else {
+                    $name .= $tenthstringdutch[$tens];
+                }
+            }
+
+            # Handle "ste" or "de" suffix
+            if ($units > 0) {
+                $name .= ($units == 2 || $units == 3) ? 'ste' : 'e';
+            } else {
+                $name .= 'ste';
+            }
+        }
+
+        if (($num >= 10) && ($num < 20)) {
+            $name .= $teenthstringdutch[$num % 10] . 'de';
+        } elsif (($num % 10 > 0) || ($_[0] == 0)) {
+            if ($num > 20 && ($num % 10 == 2 || $num % 10 == 3)) {
+                $name .= $unitstringdutch[$num % 10] . 'e';
+            } else {
+                $name .= $unitthstringdutch[$num % 10];
+            }
+        }
+    }
+
+    $name;
 }
 
 sub get_ordinalstringenglish{
@@ -1959,7 +2178,11 @@ sub get_ordinalstringgerman{
 sub get_ordinalstring{
    local($val,$gender) = @_;
 
-   if ($default_language eq 'french')
+   if ($default_language eq 'dutch')
+   {
+      &get_ordinalstringdutch($val,$gender);
+   }
+   elsif ($default_language eq 'french')
    {
       &get_ordinalstringfrench($val,$gender);
    }

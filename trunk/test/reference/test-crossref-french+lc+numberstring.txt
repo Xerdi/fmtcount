@@ -2,110 +2,127 @@ Table of content
 Contents
 un Sample
 
-1
+2
 
 deux
 Test 2
 
-2
+3
 
 trois
 Test 3
 
-2
+3
 
 quatre
 Test 4
 
-2
+3
 
 cinq
 Test 5
 
-2
+3
 
 six Test 6
 
-2
+3
 
 sept
 Test 7
 
-2
+3
 
 huit
 Test 8
 
-2
+3
 
 neuf
 Test 9
 
-2
+3
 
 dixTest 10
 
-2
+3
 
 onze
 Test 11
 
-2
+3
 
 douze
 Test 12
 
-2
+3
 
 treize
 Test 13
 
-2
+3
 
 quatorze
 Test 14
 
-2
+3
 
 quinze
 Test 15
 
-2
+3
 
 seize
 Test 16
 
-2
+3
 
 dix-sept
 Test 17
 
-2
+3
 
 dix-huit
 Test 18
 
-2
+3
 
 dix-neuf
 Test 19
 
-2
+3
 
 vingt
 Test 20
 
-2
+3
 
-un
+vingt-et-un
+Test 21
+
+3
+
+vingt-deux
+Test 22
+
+3
+
+vingt-trois
+Test 23
+
+3
+
+1
+
+un
 
 Sample
 
 Test cross-reference to section un, deux, trois, quatre, cinq, six, sept, huit, neuf,
-dix, onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, and
-vingt.
+dix, onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf,
+vingt, vingt-et-un, vingt-deux, and vingt-trois.
 
-1
+2
 
 deux
 
@@ -180,6 +197,17 @@ vingt
 
 Test 20
 
-2
+vingt-et-un
+
+Test 21
+
+vingt-deux
+
+Test 22
+
+vingt-trois
+
+Test 23
+3
 
 

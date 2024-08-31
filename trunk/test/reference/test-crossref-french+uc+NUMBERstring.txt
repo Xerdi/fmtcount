@@ -2,111 +2,128 @@ Table of content
 Contents
 UNSample
 
-1
+2
 
 DEUX
 Test 2
 
-2
+3
 
 TROIS
 Test 3
 
-2
+3
 
 QUATRE
 Test 4
 
-2
+3
 
 CINQ
 Test 5
 
-2
+3
 
 SIXTest 6
 
-2
+3
 
 SEPT
 Test 7
 
-2
+3
 
 HUIT
 Test 8
 
-2
+3
 
 NEUF
 Test 9
 
-2
+3
 
 DIX
 Test 10
 
-2
+3
 
 ONZE
 Test 11
 
-2
+3
 
 DOUZE
 Test 12
 
-2
+3
 
 TREIZE
 Test 13
 
-2
+3
 
 QUATORZE
 Test 14
 
-2
+3
 
 QUINZE
 Test 15
 
-2
+3
 
 SEIZE
 Test 16
 
-2
+3
 
 DIX-SEPT
 Test 17
 
-2
+3
 
 DIX-HUIT
 Test 18
 
-2
+3
 
 DIX-NEUF
 Test 19
 
-2
+3
 
 VINGT
 Test 20
 
-2
+3
 
-UN
+VINGT-ET-UN
+Test 21
+
+3
+
+VINGT-DEUX
+Test 22
+
+3
+
+VINGT-TROIS
+Test 23
+
+3
+
+1
+
+UN
 
 Sample
 
 Test cross-reference to section UN, DEUX, TROIS, QUATRE, CINQ, SIX,
 SEPT, HUIT, NEUF, DIX, ONZE, DOUZE, TREIZE, QUATORZE, QUINZE,
-SEIZE, DIX-SEPT, DIX-HUIT, DIX-NEUF, and VINGT.
+SEIZE, DIX-SEPT, DIX-HUIT, DIX-NEUF, VINGT, VINGT-ET-UN, VINGTDEUX, and VINGT-TROIS.
 
-1
+2
 
 DEUX
 
@@ -179,6 +196,17 @@ VINGT
 
 Test 20
 
-2
+VINGT-ET-UN
+
+Test 21
+
+VINGT-DEUX
+
+Test 22
+
+VINGT-TROIS
+
+Test 23
+3
 
 

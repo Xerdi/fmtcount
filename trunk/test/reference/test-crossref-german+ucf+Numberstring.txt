@@ -3,111 +3,128 @@ Contents
 Eins
 Sample
 
-1
+2
 
 Zwei
 Test 2
 
-2
+3
 
 Drei
 Test 3
 
-2
+3
 
 Vier
 Test 4
 
-2
+3
 
 Fünf
 Test 5
 
-2
+3
 
 Sechs
 Test 6
 
-2
+3
 
 Sieben
 Test 7
 
-2
+3
 
 Acht
 Test 8
 
-2
+3
 
 Neun
 Test 9
 
-2
+3
 
 Zehn
 Test 10
 
-2
+3
 
 ElfTest 11
 
-2
+3
 
 Zwölf
 Test 12
 
-2
+3
 
 Dreizehn
 Test 13
 
-2
+3
 
 Vierzehn
 Test 14
 
-2
+3
 
 Fünfzehn
 Test 15
 
-2
+3
 
 Sechzehn
 Test 16
 
-2
+3
 
 Siebzehn
 Test 17
 
-2
+3
 
 Achtzehn
 Test 18
 
-2
+3
 
 Neunzehn
 Test 19
 
-2
+3
 
 Zwanzig
 Test 20
 
-2
+3
 
-Eins
+Einundzwanzig
+Test 21
+
+3
+
+Zweiundzwanzig
+Test 22
+
+3
+
+Dreiundzwanzig
+Test 23
+
+3
+
+1
+
+Eins
 
 Sample
 
 Test cross-reference to section Eins, Zwei, Drei, Vier, Fünf, Sechs, Sieben, Acht,
 Neun, Zehn, Elf, Zwölf, Dreizehn, Vierzehn, Fünfzehn, Sechzehn, Siebzehn,
-Achtzehn, Neunzehn, and Zwanzig.
+Achtzehn, Neunzehn, Zwanzig, Einundzwanzig, Zweiundzwanzig, and Dreiundzwanzig.
 
-1
+2
 
 Zwei
 
@@ -185,6 +202,17 @@ Zwanzig
 
 Test 20
 
-2
+Einundzwanzig
+
+Test 21
+
+Zweiundzwanzig
+
+Test 22
+
+Dreiundzwanzig
+
+Test 23
+3
 
 
