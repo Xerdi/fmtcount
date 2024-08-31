@@ -1,5 +1,18 @@
 fmtcount package versions:
 
+Version 3.08
+
+* Add Dutch language support
+
+* Update special characters for German and Spanish
+
+* Fix test suite
+
+Version 3.07:
+
+* Make french definition robust against cleveref 0.21.4 dirty handling
+  of conditionals. See https://github.com/nlct/fmtcount/pull/36.
+
 Version 3.06:
 
 * Fix French documentation « mille » → « mil » where applicable.
