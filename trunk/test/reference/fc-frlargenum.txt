@@ -1,1450 +1,793 @@
-1 \numberstringnum{#1}
+1
+
+\numberstringnum{#1}
+
 \fmtsetoptions{french={all plural}}
-1
-iunh
-2
-ideuxh
-3
-itroish
-4
-iquatreh
-5
-icinqh
-6
-isixh
-7
-isepth
-8
-ihuith
-9
-ineufh
-10
-idixh
-11
-ionzeh
-12
-idouzeh
-13
-itreizeh
-14
-iquatorzeh
-15
-iquinzeh
-16
-iseizeh
-17
-idix-septh
-18
-idix-huith
-19
-idix-neufh
-20
-ivingth
-21
-ivingt••et••unh
-22
-ivingt-deuxh
-29
-ivingt-neufh
+1 ⟩un⟨
+2 ⟩deux⟨
+3 ⟩trois⟨
+4 ⟩quatre⟨
+5 ⟩cinq⟨
+6 ⟩six⟨
+7 ⟩sept⟨
+8 ⟩huit⟨
+9 ⟩neuf⟨
+10 ⟩dix⟨
+11 ⟩onze⟨
+12 ⟩douze⟨
+13 ⟩treize⟨
+14 ⟩quatorze⟨
+15 ⟩quinze⟨
+16 ⟩seize⟨
+17 ⟩dix-sept⟨
+18 ⟩dix-huit⟨
+19 ⟩dix-neuf⟨
+20 ⟩vingt⟨
+21 ⟩vingt••et••un⟨
+22 ⟩vingt-deux⟨
+29 ⟩vingt-neuf⟨
 \fmtsetoptions{french={scale=long}}
-iun??sextilliardh
-1 000 000 000 000 000
+1 000 000 000 000 000 ⟩un⋆⋆sextilliard⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iun??dodecillionh
+1 000 000 000 000 000 ⟩un⋆⋆dodecillion⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-imille??milliards??de??milliards??de??milliards?000 000 000 000 000
-?de??milliardsh
+1 000 000 000 000 000 ⟩mille⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆000 000 000 000 000 ⋆de⋆⋆milliards⟨
 000 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??milliard??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000
 
 1
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??million??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-1 000 000 000 000 000
-
-imille??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩mille⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-ideux??sextilliardsh
+2 000 000 000 000 000 ⟩deux⋆⋆sextilliards⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-ideux??dodecillionsh
+2 000 000 000 000 000 ⟩deux⋆⋆dodecillions⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-ideux••mille??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩deux••mille⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??milliards??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆000 000 000 000 000 ⋆de⋆⋆milliards⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??millions??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-ideux••mille??milliards??de??milliards??de??milliardsh
-icent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mille??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mille??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mille••neuf••cent••quarante••et••unh
+2 000 000 000 000 000 ⟩deux••mille⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
+156 404 724 555 428 ⟩cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆769 499 217 321 941 ⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mille⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mille⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mille••neuf••cent••quarante••et••un⟨
 
 2
 
-iquatre••mille??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mille??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mille??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mille••cinq••cent••quatre-vingt-quatreh
-97 415 427 916 562
-iquatre-vingt-dix-sept••mille??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mille??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingtdix-huit••mille??milliards••neuf••cent••soixantetreize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mille••sept••cent••quatreh
-80
-iquatre-vingtsh
-81
-iquatre-vingt-unh
-21
-ivingt••et••unh
-31
-itrente••et••unh
-200
-ideux••centsh
-201
-ideux••cent••unh
-200 000
-ideux••cent••milleh
-200 000 000
-ideux••cents??millionsh
-201 000 000
-ideux••cent••un??millionsh
-80 000
-iquatre-vingt••milleh
-80 000 000
-iquatre-vingts??millionsh
-81 000
-iquatre-vingt-un••milleh
-81 000 000
-iquatre-vingt-un??millionsh
+⟩quatre••mille⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mille⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mille⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mille••cinq••cent••quatre-vingt-quatre⟨
+97 415 427 916 562 ⟩quatre-vingt-dix-sept••mille⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mille⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingtdix-huit••mille⋆⋆milliards••neuf••cent••soixantetreize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mille••sept••cent••quatre⟨
+80 ⟩quatre-vingts⟨
+81 ⟩quatre-vingt-un⟨
+21 ⟩vingt••et••un⟨
+31 ⟩trente••et••un⟨
+200 ⟩deux••cents⟨
+201 ⟩deux••cent••un⟨
+200 000 ⟩deux••cent••mille⟨
+200 000 000 ⟩deux••cents⋆⋆millions⟨
+201 000 000 ⟩deux••cent••un⋆⋆millions⟨
+80 000 ⟩quatre-vingt••mille⟨
+80 000 000 ⟩quatre-vingts⋆⋆millions⟨
+81 000 ⟩quatre-vingt-un••mille⟨
+81 000 000 ⟩quatre-vingt-un⋆⋆millions⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-imilh
-2000
-ideux••milleh
-1001
-imil••unh
-2001
-ideux••mille••unh
-1900
-imil••neuf••centsh
-2012
-ideux••mille••douzeh
+1000 ⟩mil⟨
+2000 ⟩deux••mille⟨
+1001 ⟩mil••un⟨
+2001 ⟩deux••mille••un⟨
+1900 ⟩mil••neuf••cents⟨
+2012 ⟩deux••mille••douze⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 3
 
-900
-ineuf••centsh
+900 ⟩neuf••cents⟨
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-ideux••milsh
+2000 ⟩deux••mils⟨
 
-2 \numberstringnum{#1}[f]
-\fmtsetoptions{french={all plural}}
-1
-iuneh
 2
-ideuxh
-3
-itroish
-4
-iquatreh
-5
-icinqh
-6
-isixh
-7
-isepth
-8
-ihuith
-9
-ineufh
-10
-idixh
-11
-ionzeh
-12
-idouzeh
-13
-itreizeh
-14
-iquatorzeh
-15
-iquinzeh
-16
-iseizeh
-17
-idix-septh
-18
-idix-huith
-19
-idix-neufh
-20
-ivingth
-21
-ivingt••et••uneh
-22
-ivingt-deuxh
-29
-ivingt-neufh
+
+\numberstringnum{#1}[f]
+
+\fmtsetoptions{french={all plural}}
+1 ⟩une⟨
+2 ⟩deux⟨
+3 ⟩trois⟨
+4 ⟩quatre⟨
+5 ⟩cinq⟨
+6 ⟩six⟨
+7 ⟩sept⟨
+8 ⟩huit⟨
+9 ⟩neuf⟨
+10 ⟩dix⟨
+11 ⟩onze⟨
+12 ⟩douze⟨
+13 ⟩treize⟨
+14 ⟩quatorze⟨
+15 ⟩quinze⟨
+16 ⟩seize⟨
+17 ⟩dix-sept⟨
+18 ⟩dix-huit⟨
+19 ⟩dix-neuf⟨
+20 ⟩vingt⟨
+21 ⟩vingt••et••une⟨
+22 ⟩vingt-deux⟨
+29 ⟩vingt-neuf⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iun??sextilliardh
+1 000 000 000 000 000 ⟩un⋆⋆sextilliard⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iun??dodecillionh
+1 000 000 000 000 000 ⟩un⋆⋆dodecillion⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-imils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsh
+1 000 000 000 000 000 ⟩mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000 000
-
 4
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??milliard??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??million??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-1 000 000 000 000 000
-
-imils??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-ideux??sextilliardsh
+2 000 000 000 000 000 ⟩deux⋆⋆sextilliards⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-ideux??dodecillionsh
+2 000 000 000 000 000 ⟩deux⋆⋆dodecillions⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-ideux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??milliards??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆000 000 000 000 000 ⋆de⋆⋆milliards⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??millions??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-ideux••mils??milliards??de??milliards??de??milliardsh
-icent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••uneh
+2 000 000 000 000 000 ⟩deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
+156 404 724 555 428 ⟩cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆769 499 217 321 941 ⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••une⟨
 
 5
 
-iquatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatreh
-97 415 427 916 562
-iquatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatreh
-80
-iquatre-vingtsh
-81
-iquatre-vingt-uneh
-21
-ivingt••et••uneh
-31
-itrente••et••uneh
-200
-ideux••centsh
-201
-ideux••cent••uneh
-200 000
-ideux••cent••milsh
-200 000 000
-ideux••cents??millionsh
-201 000 000
-ideux••cent••un??millionsh
-80 000
-iquatre-vingt••milsh
-80 000 000
-iquatre-vingts??millionsh
-81 000
-iquatre-vingt-un••milsh
-81 000 000
-iquatre-vingt-un??millionsh
+⟩quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatre⟨
+97 415 427 916 562 ⟩quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatre⟨
+80 ⟩quatre-vingts⟨
+81 ⟩quatre-vingt-une⟨
+21 ⟩vingt••et••une⟨
+31 ⟩trente••et••une⟨
+200 ⟩deux••cents⟨
+201 ⟩deux••cent••une⟨
+200 000 ⟩deux••cent••mils⟨
+200 000 000 ⟩deux••cents⋆⋆millions⟨
+201 000 000 ⟩deux••cent••un⋆⋆millions⟨
+80 000 ⟩quatre-vingt••mils⟨
+80 000 000 ⟩quatre-vingts⋆⋆millions⟨
+81 000 ⟩quatre-vingt-un••mils⟨
+81 000 000 ⟩quatre-vingt-un⋆⋆millions⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-imilh
-2000
-ideux••milsh
-1001
-imil••uneh
-2001
-ideux••mils••uneh
-1900
-imil••neuf••centsh
-2012
-ideux••mils••douzeh
-900
-ineuf••centsh
+1000 ⟩mil⟨
+2000 ⟩deux••mils⟨
+1001 ⟩mil••une⟨
+2001 ⟩deux••mils••une⟨
+1900 ⟩mil••neuf••cents⟨
+2012 ⟩deux••mils••douze⟨
+900 ⟩neuf••cents⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 6
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-ideux••milsh
+2000 ⟩deux••mils⟨
 
-3 \ordinalstringnum{#1}
-\fmtsetoptions{french={all plural}}
-1
-ipremierh
-2
-ideuxièmeh
 3
-itroisièmeh
-4
-iquatrièmeh
-5
-icinquièmeh
-6
-isixièmeh
-7
-iseptièmeh
-8
-ihuitièmeh
-9
-ineuvièmeh
-10
-idixièmeh
-11
-ionzièmeh
-12
-idouzièmeh
-13
-itreizièmeh
-14
-iquatorzièmeh
-15
-iquinzièmeh
-16
-iseizièmeh
-17
-idix-septièmeh
-18
-idix-huitièmeh
-19
-idix-neuvièmeh
-20
-ivingtièmeh
-21
-ivingt••et••unièmeh
-22
-ivingt-deuxièmeh
-29
-ivingt-neuvièmeh
+
+\ordinalstringnum{#1}
+
+\fmtsetoptions{french={all plural}}
+1 ⟩premier⟨
+2 ⟩deuxième⟨
+3 ⟩troisième⟨
+4 ⟩quatrième⟨
+5 ⟩cinquième⟨
+6 ⟩sixième⟨
+7 ⟩septième⟨
+8 ⟩huitième⟨
+9 ⟩neuvième⟨
+10 ⟩dixième⟨
+11 ⟩onzième⟨
+12 ⟩douzième⟨
+13 ⟩treizième⟨
+14 ⟩quatorzième⟨
+15 ⟩quinzième⟨
+16 ⟩seizième⟨
+17 ⟩dix-septième⟨
+18 ⟩dix-huitième⟨
+19 ⟩dix-neuvième⟨
+20 ⟩vingtième⟨
+21 ⟩vingt••et••unième⟨
+22 ⟩vingt-deuxième⟨
+29 ⟩vingt-neuvième⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iun??sextilliardièmeh
+1 000 000 000 000 000 ⟩un⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iun??dodecillionièmeh
+1 000 000 000 000 000 ⟩un⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-imils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsièmeh
+1 000 000 000 000 000 ⟩mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000 000
 
 7
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??million??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-1 000 000 000 000 000
-
-imils??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-ideux??sextilliardièmeh
+2 000 000 000 000 000 ⟩deux⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-ideux??dodecillionièmeh
+2 000 000 000 000 000 ⟩deux⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-ideux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsièmeh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩deux⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??million??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩deux⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-ideux••mils??milliards??de??milliards??de??milliardsièmeh
-icent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unièmeh
+2 000 000 000 000 000 ⟩deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
+156 404 724 555 428 ⟩cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆769 499 217 321 941 ⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unième⟨
 
 8
 
-iquatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrièmeh
-97 415 427 916 562
-iquatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatrièmeh
-80
-iquatre-vingtièmeh
-81
-iquatre-vingt-unièmeh
-21
-ivingt••et••unièmeh
-31
-itrente••et••unièmeh
-200
-ideux••centièmeh
-201
-ideux••cent••unièmeh
-200 000
-ideux••cent••milsièmeh
-200 000 000
-ideux••cent??millionièmeh
-201 000 000
-ideux••cent••un??millionièmeh
-80 000
-iquatre-vingt••milsièmeh
-80 000 000
-iquatre-vingts??millionièmeh
-81 000
-iquatre-vingt-un••milsièmeh
-81 000 000
-iquatre-vingt-un??millionièmeh
+⟩quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrième⟨
+97 415 427 916 562 ⟩quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatrième⟨
+80 ⟩quatre-vingtième⟨
+81 ⟩quatre-vingt-unième⟨
+21 ⟩vingt••et••unième⟨
+31 ⟩trente••et••unième⟨
+200 ⟩deux••centième⟨
+201 ⟩deux••cent••unième⟨
+200 000 ⟩deux••cent••milsième⟨
+200 000 000 ⟩deux••cent⋆⋆millionième⟨
+201 000 000 ⟩deux••cent••un⋆⋆millionième⟨
+80 000 ⟩quatre-vingt••milsième⟨
+80 000 000 ⟩quatre-vingts⋆⋆millionième⟨
+81 000 ⟩quatre-vingt-un••milsième⟨
+81 000 000 ⟩quatre-vingt-un⋆⋆millionième⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-imilièmeh
-2000
-ideux••milièmeh
-1001
-imil••unièmeh
-2001
-ideux••mils••unièmeh
-1900
-imil••neuf••centièmeh
-2012
-ideux••mils••douzièmeh
-900
-ineuf••centièmeh
+1000 ⟩milième⟨
+2000 ⟩deux••milième⟨
+1001 ⟩mil••unième⟨
+2001 ⟩deux••mils••unième⟨
+1900 ⟩mil••neuf••centième⟨
+2012 ⟩deux••mils••douzième⟨
+900 ⟩neuf••centième⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 9
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-ideux••milièmeh
+2000 ⟩deux••milième⟨
 
-4 \ordinalstringnum{#1}[f]
-\fmtsetoptions{french={all plural}}
-1
-ipremièreh
-2
-ideuxièmeh
-3
-itroisièmeh
 4
-iquatrièmeh
-5
-icinquièmeh
-6
-isixièmeh
-7
-iseptièmeh
-8
-ihuitièmeh
-9
-ineuvièmeh
-10
-idixièmeh
-11
-ionzièmeh
-12
-idouzièmeh
-13
-itreizièmeh
-14
-iquatorzièmeh
-15
-iquinzièmeh
-16
-iseizièmeh
-17
-idix-septièmeh
-18
-idix-huitièmeh
-19
-idix-neuvièmeh
-20
-ivingtièmeh
-21
-ivingt••et••unièmeh
-22
-ivingt-deuxièmeh
-29
-ivingt-neuvièmeh
+
+\ordinalstringnum{#1}[f]
+
+\fmtsetoptions{french={all plural}}
+1 ⟩première⟨
+2 ⟩deuxième⟨
+3 ⟩troisième⟨
+4 ⟩quatrième⟨
+5 ⟩cinquième⟨
+6 ⟩sixième⟨
+7 ⟩septième⟨
+8 ⟩huitième⟨
+9 ⟩neuvième⟨
+10 ⟩dixième⟨
+11 ⟩onzième⟨
+12 ⟩douzième⟨
+13 ⟩treizième⟨
+14 ⟩quatorzième⟨
+15 ⟩quinzième⟨
+16 ⟩seizième⟨
+17 ⟩dix-septième⟨
+18 ⟩dix-huitième⟨
+19 ⟩dix-neuvième⟨
+20 ⟩vingtième⟨
+21 ⟩vingt••et••unième⟨
+22 ⟩vingt-deuxième⟨
+29 ⟩vingt-neuvième⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iun??sextilliardièmeh
+1 000 000 000 000 000 ⟩un⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iun??dodecillionièmeh
+1 000 000 000 000 000 ⟩un⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-imils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsièmeh
+1 000 000 000 000 000 ⟩mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000 000
 
 10
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iun??million??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-1 000 000 000 000 000
-
-imils??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-ideux??sextilliardièmeh
+2 000 000 000 000 000 ⟩deux⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-ideux??dodecillionièmeh
+2 000 000 000 000 000 ⟩deux⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-ideux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsièmeh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩deux⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-ideux??million??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩deux⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-ideux••mils??milliards??de??milliards??de??milliardsièmeh
-icent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unièmeh
+2 000 000 000 000 000 ⟩deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
+156 404 724 555 428 ⟩cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆769 499 217 321 941 ⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unième⟨
 
 11
 
-iquatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrièmeh
-97 415 427 916 562
-iquatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatrièmeh
-80
-iquatre-vingtièmeh
-81
-iquatre-vingt-unièmeh
-21
-ivingt••et••unièmeh
-31
-itrente••et••unièmeh
-200
-ideux••centièmeh
-201
-ideux••cent••unièmeh
-200 000
-ideux••cent••milsièmeh
-200 000 000
-ideux••cent??millionièmeh
-201 000 000
-ideux••cent••un??millionièmeh
-80 000
-iquatre-vingt••milsièmeh
-80 000 000
-iquatre-vingts??millionièmeh
-81 000
-iquatre-vingt-un••milsièmeh
-81 000 000
-iquatre-vingt-un??millionièmeh
+⟩quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrième⟨
+97 415 427 916 562 ⟩quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatrième⟨
+80 ⟩quatre-vingtième⟨
+81 ⟩quatre-vingt-unième⟨
+21 ⟩vingt••et••unième⟨
+31 ⟩trente••et••unième⟨
+200 ⟩deux••centième⟨
+201 ⟩deux••cent••unième⟨
+200 000 ⟩deux••cent••milsième⟨
+200 000 000 ⟩deux••cent⋆⋆millionième⟨
+201 000 000 ⟩deux••cent••un⋆⋆millionième⟨
+80 000 ⟩quatre-vingt••milsième⟨
+80 000 000 ⟩quatre-vingts⋆⋆millionième⟨
+81 000 ⟩quatre-vingt-un••milsième⟨
+81 000 000 ⟩quatre-vingt-un⋆⋆millionième⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-imilièmeh
-2000
-ideux••milièmeh
-1001
-imil••unièmeh
-2001
-ideux••mils••unièmeh
-1900
-imil••neuf••centièmeh
-2012
-ideux••mils••douzièmeh
-900
-ineuf••centièmeh
+1000 ⟩milième⟨
+2000 ⟩deux••milième⟨
+1001 ⟩mil••unième⟨
+2001 ⟩deux••mils••unième⟨
+1900 ⟩mil••neuf••centième⟨
+2012 ⟩deux••mils••douzième⟨
+900 ⟩neuf••centième⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 12
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-ideux••milièmeh
+2000 ⟩deux••milième⟨
 
-5 \Numberstringnum{#1}
-\fmtsetoptions{french={all plural}}
-1
-iUnh
-2
-iDeuxh
-3
-iTroish
-4
-iQuatreh
 5
-iCinqh
-6
-iSixh
-7
-iSepth
-8
-iHuith
-9
-iNeufh
-10
-iDixh
-11
-iOnzeh
-12
-iDouzeh
-13
-iTreizeh
-14
-iQuatorzeh
-15
-iQuinzeh
-16
-iSeizeh
-17
-iDix-septh
-18
-iDix-huith
-19
-iDix-neufh
-20
-iVingth
-21
-iVingt••et••unh
-22
-iVingt-deuxh
-29
-iVingt-neufh
+
+\Numberstringnum{#1}
+
+\fmtsetoptions{french={all plural}}
+1 ⟩Un⟨
+2 ⟩Deux⟨
+3 ⟩Trois⟨
+4 ⟩Quatre⟨
+5 ⟩Cinq⟨
+6 ⟩Six⟨
+7 ⟩Sept⟨
+8 ⟩Huit⟨
+9 ⟩Neuf⟨
+10 ⟩Dix⟨
+11 ⟩Onze⟨
+12 ⟩Douze⟨
+13 ⟩Treize⟨
+14 ⟩Quatorze⟨
+15 ⟩Quinze⟨
+16 ⟩Seize⟨
+17 ⟩Dix-sept⟨
+18 ⟩Dix-huit⟨
+19 ⟩Dix-neuf⟨
+20 ⟩Vingt⟨
+21 ⟩Vingt••et••un⟨
+22 ⟩Vingt-deux⟨
+29 ⟩Vingt-neuf⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iUn??sextilliardh
+1 000 000 000 000 000 ⟩Un⋆⋆sextilliard⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iUn??dodecillionh
+1 000 000 000 000 000 ⟩Un⋆⋆dodecillion⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-iMils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsh
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000 000
 
 13
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??milliard??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩Un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??million??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩Un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-1 000 000 000 000 000
-
-iMils??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-iDeux??sextilliardsh
+2 000 000 000 000 000 ⟩Deux⋆⋆sextilliards⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-iDeux??dodecillionsh
+2 000 000 000 000 000 ⟩Deux⋆⋆dodecillions⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-iDeux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??milliards??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆000 000 000 000 000 ⋆de⋆⋆milliards⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??millions??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-iDeux••mils??milliards??de??milliards??de??milliardsh
-iCent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unh
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
+156 404 724 555 428 ⟩Cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆769 499 217 321 941 ⋆de⋆⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••un⟨
 
 14
 
-iQuatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatreh
-97 415 427 916 562
-iQuatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatreh
-80
-iQuatre-vingtsh
-81
-iQuatre-vingt-unh
-21
-iVingt••et••unh
-31
-iTrente••et••unh
-200
-iDeux••centsh
-201
-iDeux••cent••unh
-200 000
-iDeux••cent••milsh
-200 000 000
-iDeux••cents??millionsh
-201 000 000
-iDeux••cent••un??millionsh
-80 000
-iQuatre-vingt••milsh
-80 000 000
-iQuatre-vingts??millionsh
-81 000
-iQuatre-vingt-un••milsh
-81 000 000
-iQuatre-vingt-un??millionsh
+⟩Quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatre⟨
+97 415 427 916 562 ⟩Quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatre⟨
+80 ⟩Quatre-vingts⟨
+81 ⟩Quatre-vingt-un⟨
+21 ⟩Vingt••et••un⟨
+31 ⟩Trente••et••un⟨
+200 ⟩Deux••cents⟨
+201 ⟩Deux••cent••un⟨
+200 000 ⟩Deux••cent••mils⟨
+200 000 000 ⟩Deux••cents⋆⋆millions⟨
+201 000 000 ⟩Deux••cent••un⋆⋆millions⟨
+80 000 ⟩Quatre-vingt••mils⟨
+80 000 000 ⟩Quatre-vingts⋆⋆millions⟨
+81 000 ⟩Quatre-vingt-un••mils⟨
+81 000 000 ⟩Quatre-vingt-un⋆⋆millions⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-iMilh
-2000
-iDeux••milsh
-1001
-iMil••unh
-2001
-iDeux••mils••unh
-1900
-iMil••neuf••centsh
-2012
-iDeux••mils••douzeh
-900
-iNeuf••centsh
+1000 ⟩Mil⟨
+2000 ⟩Deux••mils⟨
+1001 ⟩Mil••un⟨
+2001 ⟩Deux••mils••un⟨
+1900 ⟩Mil••neuf••cents⟨
+2012 ⟩Deux••mils••douze⟨
+900 ⟩Neuf••cents⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 15
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-iDeux••milsh
+2000 ⟩Deux••mils⟨
 
-6 \Numberstringnum{#1}[f]
-\fmtsetoptions{french={all plural}}
-1
-iuneh
-2
-iDeuxh
-3
-iTroish
-4
-iQuatreh
-5
-iCinqh
 6
-iSixh
-7
-iSepth
-8
-iHuith
-9
-iNeufh
-10
-iDixh
-11
-ionzeh
-12
-iDouzeh
-13
-iTreizeh
-14
-iQuatorzeh
-15
-iQuinzeh
-16
-iSeizeh
-17
-iDix-septh
-18
-iDix-huith
-19
-iDix-neufh
-20
-iVingth
-21
-ivingt••et••uneh
-22
-iVingt-deuxh
-29
-iVingt-neufh
+
+\Numberstringnum{#1}[f]
+
+\fmtsetoptions{french={all plural}}
+1 ⟩une⟨
+2 ⟩Deux⟨
+3 ⟩Trois⟨
+4 ⟩Quatre⟨
+5 ⟩Cinq⟨
+6 ⟩Six⟨
+7 ⟩Sept⟨
+8 ⟩Huit⟨
+9 ⟩Neuf⟨
+10 ⟩Dix⟨
+11 ⟩onze⟨
+12 ⟩Douze⟨
+13 ⟩Treize⟨
+14 ⟩Quatorze⟨
+15 ⟩Quinze⟨
+16 ⟩Seize⟨
+17 ⟩Dix-sept⟨
+18 ⟩Dix-huit⟨
+19 ⟩Dix-neuf⟨
+20 ⟩Vingt⟨
+21 ⟩vingt••et••une⟨
+22 ⟩Vingt-deux⟨
+29 ⟩Vingt-neuf⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iUn??sextilliardh
+1 000 000 000 000 000 ⟩Un⋆⋆sextilliard⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iUn??dodecillionh
+1 000 000 000 000 000 ⟩Un⋆⋆dodecillion⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-iMils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsh
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000 000
 
 16
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??milliard??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩Un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??million??de??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩Un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-1 000 000 000 000 000
-
-iMils??milliards??de??milliards??de??milliardsh
-
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-iDeux??sextilliardsh
+2 000 000 000 000 000 ⟩Deux⋆⋆sextilliards⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-iDeux??dodecillionsh
+2 000 000 000 000 000 ⟩Deux⋆⋆dodecillions⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-iDeux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliards⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??milliards??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆000 000 000 000 000 ⋆de⋆⋆milliards⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??millions??de??milliards??de??milliards??de??milliardsh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-iDeux••mils??milliards??de??milliards??de??milliardsh
-icent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••uneh
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⟨
+156 404 724 555 428 ⟩cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆769 499 217 321 941 ⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••une⟨
 
 17
 
-iQuatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatreh
-97 415 427 916 562
-iQuatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatreh
-80
-iQuatre-vingtsh
-81
-iquatre-vingt-uneh
-21
-ivingt••et••uneh
-31
-itrente••et••uneh
-200
-iDeux••centsh
-201
-ideux••cent••uneh
-200 000
-iDeux••cent••milsh
-200 000 000
-iDeux••cents??millionsh
-201 000 000
-iDeux••cent••un??millionsh
-80 000
-iQuatre-vingt••milsh
-80 000 000
-iQuatre-vingts??millionsh
-81 000
-iQuatre-vingt-un••milsh
-81 000 000
-iQuatre-vingt-un??millionsh
+⟩Quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatre⟨
+97 415 427 916 562 ⟩Quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatre⟨
+80 ⟩Quatre-vingts⟨
+81 ⟩quatre-vingt-une⟨
+21 ⟩vingt••et••une⟨
+31 ⟩trente••et••une⟨
+200 ⟩Deux••cents⟨
+201 ⟩deux••cent••une⟨
+200 000 ⟩Deux••cent••mils⟨
+200 000 000 ⟩Deux••cents⋆⋆millions⟨
+201 000 000 ⟩Deux••cent••un⋆⋆millions⟨
+80 000 ⟩Quatre-vingt••mils⟨
+80 000 000 ⟩Quatre-vingts⋆⋆millions⟨
+81 000 ⟩Quatre-vingt-un••mils⟨
+81 000 000 ⟩Quatre-vingt-un⋆⋆millions⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-iMilh
-2000
-iDeux••milsh
-1001
-imil••uneh
-2001
-ideux••mils••uneh
-1900
-iMil••neuf••centsh
-2012
-iDeux••mils••douzeh
-900
-iNeuf••centsh
+1000 ⟩Mil⟨
+2000 ⟩Deux••mils⟨
+1001 ⟩mil••une⟨
+2001 ⟩deux••mils••une⟨
+1900 ⟩Mil••neuf••cents⟨
+2012 ⟩Deux••mils••douze⟨
+900 ⟩Neuf••cents⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 18
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-iDeux••milsh
+2000 ⟩Deux••mils⟨
 
-7 \Ordinalstringnum{#1}
-\fmtsetoptions{french={all plural}}
-1
-iPremierh
-2
-iDeuxièmeh
-3
-iTroisièmeh
-4
-iQuatrièmeh
-5
-iCinquièmeh
-6
-iSixièmeh
 7
-iSeptièmeh
-8
-iHuitièmeh
-9
-iNeuvièmeh
-10
-iDixièmeh
-11
-iOnzièmeh
-12
-iDouzièmeh
-13
-iTreizièmeh
-14
-iQuatorzièmeh
-15
-iQuinzièmeh
-16
-iSeizièmeh
-17
-iDix-septièmeh
-18
-iDix-huitièmeh
-19
-iDix-neuvièmeh
-20
-iVingtièmeh
-21
-iVingt••et••unièmeh
-22
-iVingt-deuxièmeh
-29
-iVingt-neuvièmeh
+
+\Ordinalstringnum{#1}
+
+\fmtsetoptions{french={all plural}}
+1 ⟩Premier⟨
+2 ⟩Deuxième⟨
+3 ⟩Troisième⟨
+4 ⟩Quatrième⟨
+5 ⟩Cinquième⟨
+6 ⟩Sixième⟨
+7 ⟩Septième⟨
+8 ⟩Huitième⟨
+9 ⟩Neuvième⟨
+10 ⟩Dixième⟨
+11 ⟩Onzième⟨
+12 ⟩Douzième⟨
+13 ⟩Treizième⟨
+14 ⟩Quatorzième⟨
+15 ⟩Quinzième⟨
+16 ⟩Seizième⟨
+17 ⟩Dix-septième⟨
+18 ⟩Dix-huitième⟨
+19 ⟩Dix-neuvième⟨
+20 ⟩Vingtième⟨
+21 ⟩Vingt••et••unième⟨
+22 ⟩Vingt-deuxième⟨
+29 ⟩Vingt-neuvième⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iUn??sextilliardièmeh
+1 000 000 000 000 000 ⟩Un⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iUn??dodecillionièmeh
+1 000 000 000 000 000 ⟩Un⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-iMils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsièmeh
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000 000
 
 19
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩Un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??million??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩Un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-1 000 000 000 000 000
-
-iMils??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-iDeux??sextilliardièmeh
+2 000 000 000 000 000 ⟩Deux⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-iDeux??dodecillionièmeh
+2 000 000 000 000 000 ⟩Deux⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-iDeux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsièmeh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??million??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-iDeux••mils??milliards??de??milliards??de??milliardsièmeh
-iCent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unièmeh
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
+156 404 724 555 428 ⟩Cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆769 499 217 321 941 ⋆de⋆⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unième⟨
 
 20
 
-iQuatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrièmeh
-97 415 427 916 562
-iQuatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatrièmeh
-80
-iQuatre-vingtièmeh
-81
-iQuatre-vingt-unièmeh
-21
-iVingt••et••unièmeh
-31
-iTrente••et••unièmeh
-200
-iDeux••centièmeh
-201
-iDeux••cent••unièmeh
-200 000
-iDeux••cent••milsièmeh
-200 000 000
-iDeux••cent??millionièmeh
-201 000 000
-iDeux••cent••un??millionièmeh
-80 000
-iQuatre-vingt••milsièmeh
-80 000 000
-iQuatre-vingts??millionièmeh
-81 000
-iQuatre-vingt-un••milsièmeh
-81 000 000
-iQuatre-vingt-un??millionièmeh
+⟩Quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrième⟨
+97 415 427 916 562 ⟩Quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatrième⟨
+80 ⟩Quatre-vingtième⟨
+81 ⟩Quatre-vingt-unième⟨
+21 ⟩Vingt••et••unième⟨
+31 ⟩Trente••et••unième⟨
+200 ⟩Deux••centième⟨
+201 ⟩Deux••cent••unième⟨
+200 000 ⟩Deux••cent••milsième⟨
+200 000 000 ⟩Deux••cent⋆⋆millionième⟨
+201 000 000 ⟩Deux••cent••un⋆⋆millionième⟨
+80 000 ⟩Quatre-vingt••milsième⟨
+80 000 000 ⟩Quatre-vingts⋆⋆millionième⟨
+81 000 ⟩Quatre-vingt-un••milsième⟨
+81 000 000 ⟩Quatre-vingt-un⋆⋆millionième⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-iMilièmeh
-2000
-iDeux••milièmeh
-1001
-iMil••unièmeh
-2001
-iDeux••mils••unièmeh
-1900
-iMil••neuf••centièmeh
-2012
-iDeux••mils••douzièmeh
-900
-iNeuf••centièmeh
+1000 ⟩Milième⟨
+2000 ⟩Deux••milième⟨
+1001 ⟩Mil••unième⟨
+2001 ⟩Deux••mils••unième⟨
+1900 ⟩Mil••neuf••centième⟨
+2012 ⟩Deux••mils••douzième⟨
+900 ⟩Neuf••centième⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 21
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-iDeux••milièmeh
+2000 ⟩Deux••milième⟨
 
-8 \Ordinalstringnum{#1}[f]
-\fmtsetoptions{french={all plural}}
-1
-iPremièreh
-2
-iDeuxièmeh
-3
-iTroisièmeh
-4
-iQuatrièmeh
-5
-iCinquièmeh
-6
-iSixièmeh
-7
-iSeptièmeh
 8
-iHuitièmeh
-9
-iNeuvièmeh
-10
-iDixièmeh
-11
-iOnzièmeh
-12
-iDouzièmeh
-13
-iTreizièmeh
-14
-iQuatorzièmeh
-15
-iQuinzièmeh
-16
-iSeizièmeh
-17
-iDix-septièmeh
-18
-iDix-huitièmeh
-19
-iDix-neuvièmeh
-20
-iVingtièmeh
-21
-iVingt••et••unièmeh
-22
-iVingt-deuxièmeh
-29
-iVingt-neuvièmeh
+
+\Ordinalstringnum{#1}[f]
+
+\fmtsetoptions{french={all plural}}
+1 ⟩Première⟨
+2 ⟩Deuxième⟨
+3 ⟩Troisième⟨
+4 ⟩Quatrième⟨
+5 ⟩Cinquième⟨
+6 ⟩Sixième⟨
+7 ⟩Septième⟨
+8 ⟩Huitième⟨
+9 ⟩Neuvième⟨
+10 ⟩Dixième⟨
+11 ⟩Onzième⟨
+12 ⟩Douzième⟨
+13 ⟩Treizième⟨
+14 ⟩Quatorzième⟨
+15 ⟩Quinzième⟨
+16 ⟩Seizième⟨
+17 ⟩Dix-septième⟨
+18 ⟩Dix-huitième⟨
+19 ⟩Dix-neuvième⟨
+20 ⟩Vingtième⟨
+21 ⟩Vingt••et••unième⟨
+22 ⟩Vingt-deuxième⟨
+29 ⟩Vingt-neuvième⟨
 \fmtsetoptions{french={scale=long}}
-1 000 000 000 000 000
-iUn??sextilliardièmeh
+1 000 000 000 000 000 ⟩Un⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-1 000 000 000 000 000
-iUn??dodecillionièmeh
+1 000 000 000 000 000 ⟩Un⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-1 000 000 000 000 000
-iMils??milliards??de??milliards??de??milliards??de?000 000 000 000 000
-?milliardsièmeh
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000 000
 
 22
 
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩Un⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-1 000 000 000 000 000
-000 000 000 000 000
-
-iUn??million??de??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩Un⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-1 000 000 000 000 000
-
-iMils??milliards??de??milliards??de??milliardsièmeh
-
+1 000 000 000 000 000 ⟩Mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000 000 000
-
 \fmtsetoptions{french={scale=long}}
-2 000 000 000 000 000
-iDeux??sextilliardièmeh
+2 000 000 000 000 000 ⟩Deux⋆⋆sextilliardième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=short}}
-2 000 000 000 000 000
-iDeux??dodecillionièmeh
+2 000 000 000 000 000 ⟩Deux⋆⋆dodecillionième⟨
 000 000 000 000 000
 000 000 000
-
 \fmtsetoptions{french={scale=recursive}}
-iDeux••mils??milliards??de??milliards??de?2 000 000 000 000 000
-?milliards??de??milliardsièmeh
-000 000 000 000 000
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliards⋆⋆de⋆⋆milliardsième⟨
 000 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??milliard??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆milliard⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000 000
-2 000 000 000 000 000
-000 000 000 000 000
-
-iDeux??million??de??milliards??de??milliards??de??milliardsièmeh
-
+2 000 000 000 000 000 ⟩Deux⋆⋆million⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
 000
-2 000 000 000 000 000
-000 000 000 000 000
-156 404 724 555 428
-769 499 217 321 941
-
-iDeux••mils??milliards??de??milliards??de??milliardsièmeh
-iCent••cinquante-six??milliards??de??milliards??de??milliards??quatre••cent••quatre??millions??de??milliards??de??milliards??sept••cent••vingtquatre••mils??milliards??de??milliards••cinq••cent••cinquante-cinq??milliards??de??milliards??quatre••cent••vingt-huit??millions??de??milliards??sept••cent••soixante-neuf••mils??milliards••quatre••cent••quatre-vingt-dix-neuf??milliards??deux••cent••dix-sept??millions??trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unièmeh
+2 000 000 000 000 000 ⟩Deux••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆000 000 000 000 000 ⋆milliardsième⟨
+156 404 724 555 428 ⟩Cent••cinquante-six⋆⋆milliards⋆⋆de⋆⋆milliards⋆769 499 217 321 941 ⋆de⋆⋆milliards⋆⋆quatre••cent••quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••vingtquatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••cinquante-cinq⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-huit⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-neuf••mils⋆⋆milliards••quatre••cent••quatre-vingt-dix-neuf⋆⋆milliards⋆⋆deux••cent••dix-sept⋆⋆millions⋆⋆trois••cent••vingt••et••un••mils••neuf••cent••quarante••et••unième⟨
 
 23
 
-iQuatre••mils??milliards??de??milliards??de??milliards••cent••soixante••et••onze??milliards??de??milliards??de??milliards??sept••cent••soixante-quatre??millions??de??milliards??de??milliards??cent••trente-cinq••mils??milliards??de??milliards••sept••cent••deux??milliards??de??milliards??deux••cent••soixante-deux??millions??de??milliards??trois••cent••quarante-neuf••mils??milliards••cinq••cent••soixante-sept??milliards??un??million??cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrièmeh
-97 415 427 916 562
-iQuatre-vingt-dix-sept••mils??milliards??de?250 398 973 107 371
-?milliards??de??milliards••quatre••cent••quinze?704
-?milliards??de??milliards??de??milliards??quatre••cent••vingt-sept??millions??de??milliards??de??milliards??neuf••cent••seize••mils??milliards??de??milliards••cinq••cent••soixante-deux??milliards??de??milliards??deux••cent••cinquante??millions??de??milliards??trois••cent••quatre-vingt-dix-huit••mils??milliards••neuf••cent••soixante-treize??milliards??cent••sept??millions??trois••cent••soixante••et••onze••mils••sept••cent••quatrièmeh
-80
-iQuatre-vingtièmeh
-81
-iQuatre-vingt-unièmeh
-21
-iVingt••et••unièmeh
-31
-iTrente••et••unièmeh
-200
-iDeux••centièmeh
-201
-iDeux••cent••unièmeh
-200 000
-iDeux••cent••milsièmeh
-200 000 000
-iDeux••cent??millionièmeh
-201 000 000
-iDeux••cent••un??millionièmeh
-80 000
-iQuatre-vingt••milsièmeh
-80 000 000
-iQuatre-vingts??millionièmeh
-81 000
-iQuatre-vingt-un••milsièmeh
-81 000 000
-iQuatre-vingt-un??millionièmeh
+⟩Quatre••mils⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards••cent••soixante••et••onze⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆sept••cent••soixante-quatre⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆cent••trente-cinq••mils⋆⋆milliards⋆⋆de⋆⋆milliards••sept••cent••deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••soixante-deux⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quarante-neuf••mils⋆⋆milliards••cinq••cent••soixante-sept⋆⋆milliards⋆⋆un⋆⋆million⋆⋆cinq••cent••soixante-quatorze••mils••cinq••cent••quatre-vingt-quatrième⟨
+97 415 427 916 562 ⟩Quatre-vingt-dix-sept••mils⋆⋆milliards⋆⋆de⋆250 398 973 107 371 ⋆milliards⋆⋆de⋆⋆milliards••quatre••cent••quinze⋆704 ⋆milliards⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆quatre••cent••vingt-sept⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆neuf••cent••seize••mils⋆⋆milliards⋆⋆de⋆⋆milliards••cinq••cent••soixante-deux⋆⋆milliards⋆⋆de⋆⋆milliards⋆⋆deux••cent••cinquante⋆⋆millions⋆⋆de⋆⋆milliards⋆⋆trois••cent••quatre-vingt-dix-huit••mils⋆⋆milliards••neuf••cent••soixante-treize⋆⋆milliards⋆⋆cent••sept⋆⋆millions⋆⋆trois••cent••soixante••et••onze••mils••sept••cent••quatrième⟨
+80 ⟩Quatre-vingtième⟨
+81 ⟩Quatre-vingt-unième⟨
+21 ⟩Vingt••et••unième⟨
+31 ⟩Trente••et••unième⟨
+200 ⟩Deux••centième⟨
+201 ⟩Deux••cent••unième⟨
+200 000 ⟩Deux••cent••milsième⟨
+200 000 000 ⟩Deux••cent⋆⋆millionième⟨
+201 000 000 ⟩Deux••cent••un⋆⋆millionième⟨
+80 000 ⟩Quatre-vingt••milsième⟨
+80 000 000 ⟩Quatre-vingts⋆⋆millionième⟨
+81 000 ⟩Quatre-vingt-un••milsième⟨
+81 000 000 ⟩Quatre-vingt-un⋆⋆millionième⟨
 \fmtsetoptions{french={all plural,mil plural=multiple}}
-1000
-iMilièmeh
-2000
-iDeux••milièmeh
-1001
-iMil••unièmeh
-2001
-iDeux••mils••unièmeh
-1900
-iMil••neuf••centièmeh
-2012
-iDeux••mils••douzièmeh
-900
-iNeuf••centièmeh
+1000 ⟩Milième⟨
+2000 ⟩Deux••milième⟨
+1001 ⟩Mil••unième⟨
+2001 ⟩Deux••mils••unième⟨
+1900 ⟩Mil••neuf••centième⟨
+2012 ⟩Deux••mils••douzième⟨
+900 ⟩Neuf••centième⟨
 4 171 764 135 702 262
-
 349 567 001 574 584
 
 24
 
 \fmtsetoptions{french={all plural,mil plural=multiple,mil plural mark=s}}
-2000
-iDeux••milièmeh
+2000 ⟩Deux••milième⟨
 
 25
 

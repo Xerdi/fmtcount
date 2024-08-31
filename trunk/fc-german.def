@@ -40,7 +40,7 @@
     \or zwei%
     \or drei%
     \or vier%
-    \or f\"unf%
+    \or fünf%
     \or sechs%
     \or sieben%
     \or acht%
@@ -55,9 +55,9 @@
   \ifcase#1%
     \or zehn%
     \or zwanzig%
-    \or drei{\ss}ig%
+    \or dreißig%
     \or vierzig%
-    \or f\"unfzig%
+    \or fünfzig%
     \or sechzig%
     \or siebzig%
     \or achtzig%
@@ -67,9 +67,9 @@
 }%
 \global\let\@@tenstringgerman\@@tenstringgerman
 %    \end{macrocode}
-% |\einhundert| is set to |einhundert| by default, user can
+% \cs{einhundert} is set to |einhundert| by default, user can
 % redefine this command to just |hundert| if required, similarly
-% for |\eintausend|.
+% for \cs{eintausend}.
 %    \begin{macrocode}
 \providecommand*{\einhundert}{einhundert}%
 \providecommand*{\eintausend}{eintausend}%
@@ -82,10 +82,10 @@
   \ifcase#1%
     zehn%
     \or elf%
-    \or zw\"olf%
+    \or zwölf%
     \or dreizehn%
     \or vierzehn%
-    \or f\"unfzehn%
+    \or fünfzehn%
     \or sechzehn%
     \or siebzehn%
     \or achtzehn%
@@ -203,7 +203,7 @@
 % it is easier to split it into units, tens and teens.
 % Units:
 %\changes{2.0}{2012-09-25}{fixed spelling mistake (correction
-%provided by Dominik Wa\ss enhoven)}
+%provided by Dominik Waß enhoven)}
 %    \begin{macrocode}
 \newcommand*\@@unitthstringMgerman[1]{%
   \ifcase#1%
@@ -212,7 +212,7 @@
     \or zweiter%
     \or dritter%
     \or vierter%
-    \or f\"unfter%
+    \or fünfter%
     \or sechster%
     \or siebter%
     \or achter%
@@ -227,9 +227,9 @@
   \ifcase#1%
     \or zehnter%
     \or zwanzigster%
-    \or drei{\ss}igster%
+    \or dreißigster%
     \or vierzigster%
-    \or f\"unfzigster%
+    \or fünfzigster%
     \or sechzigster%
     \or siebzigster%
     \or achtzigster%
@@ -244,10 +244,10 @@
   \ifcase#1%
     zehnter%
     \or elfter%
-    \or zw\"olfter%
+    \or zwölfter%
     \or dreizehnter%
     \or vierzehnter%
-    \or f\"unfzehnter%
+    \or fünfzehnter%
     \or sechzehnter%
     \or siebzehnter%
     \or achtzehnter%
@@ -265,7 +265,7 @@
     \or zweite%
     \or dritte%
     \or vierte%
-    \or f\"unfte%
+    \or fünfte%
     \or sechste%
     \or siebte%
     \or achte%
@@ -280,9 +280,9 @@
   \ifcase#1%
     \or zehnte%
     \or zwanzigste%
-    \or drei{\ss}igste%
+    \or dreißigste%
     \or vierzigste%
-    \or f\"unfzigste%
+    \or fünfzigste%
     \or sechzigste%
     \or siebzigste%
     \or achtzigste%
@@ -297,10 +297,10 @@
   \ifcase#1%
     zehnte%
     \or elfte%
-    \or zw\"olfte%
+    \or zwölfte%
     \or dreizehnte%
     \or vierzehnte%
-    \or f\"unfzehnte%
+    \or fünfzehnte%
     \or sechzehnte%
     \or siebzehnte%
     \or achtzehnte%
@@ -320,7 +320,7 @@
     \or zweites%
     \or drittes%
     \or viertes%
-    \or f\"unftes%
+    \or fünftes%
     \or sechstes%
     \or siebtes%
     \or achtes%
@@ -335,9 +335,9 @@
   \ifcase#1%
     \or zehntes%
     \or zwanzigstes%
-    \or drei{\ss}igstes%
+    \or dreißigstes%
     \or vierzigstes%
-    \or f\"unfzigstes%
+    \or fünfzigstes%
     \or sechzigstes%
     \or siebzigstes%
     \or achtzigstes%
@@ -352,10 +352,10 @@
   \ifcase#1%
     zehntes%
     \or elftes%
-    \or zw\"olftes%
+    \or zwölftes%
     \or dreizehntes%
     \or vierzehntes%
-    \or f\"unfzehntes%
+    \or fünfzehntes%
     \or sechzehntes%
     \or siebzehntes%
     \or achtzehntes%
