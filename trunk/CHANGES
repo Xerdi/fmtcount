@@ -1,5 +1,11 @@
 fmtcount package versions:
 
+Version 3.09
+
+* Remove redundant \"u occurences in Portuguese
+
+* Fix \andname conjunction for Portuguese
+
 Version 3.08
 
 * Add Dutch language support
