@@ -635,12 +635,8 @@
     \@strctr=#1 \divide\@strctr by 1000\relax
     \@FCmodulo{\@strctr}{10}%
     \ifnum\@strctr>0
-      \ifnum\@strctr=1\relax
-        \let\@@fc@numstr#2\relax
-        \protected@edef#2{\@@fc@numstr\ \@andname}%
-      \fi
       \let\@@fc@numstr#2\relax
-      \protected@edef#2{\@@fc@numstr\ \@unitstring{\@strctr}}%
+      \protected@edef#2{\@@fc@numstr\ \@andname\ \@unitstring{\@strctr}}%
     \fi
   \else
     \@strctr=#1\relax
@@ -666,7 +662,7 @@
 \ifnum\@strctr>0\relax
   \ifnum#1>1000 \relax
     \let\@@fc@numstr#2\relax
-    \protected@edef#2{\@@fc@numstr\ }%
+    \protected@edef#2{\@@fc@numstr\ \@andname\ }%
   \fi
   \@tmpstrctr=#1\relax
   \@FCmodulo{\@tmpstrctr}{1000}%
