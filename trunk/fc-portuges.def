@@ -690,15 +690,8 @@
   \protected@edef#2{\@@fc@numstr\@tenstring{\@strctr}}%
   \@strctr=#1\relax \@FCmodulo{\@strctr}{10}%
   \ifnum\@strctr>0
-    \ifnum\@strctr=1\relax
-      \let\@@fc@numstr#2\relax
-      \protected@edef#2{\@@fc@numstr\ \@andname}%
-    \else
-      \ifnum#1>100\relax
-        \let\@@fc@numstr#2\relax
-        \protected@edef#2{\@@fc@numstr\ \@andname}%
-      \fi
-    \fi
+    \let\@@fc@numstr#2\relax
+    \protected@edef#2{\@@fc@numstr\ \@andname}%
     \let\@@fc@numstr#2\relax
     \protected@edef#2{\@@fc@numstr\ \@unitstring{\@strctr}}%
   \fi
