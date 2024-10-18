@@ -80,7 +80,7 @@
     \or vinte%
     \or trinta%
     \or quarenta%
-    \or cinq\"uenta%
+    \or cinquenta%
     \or sessenta%
     \or setenta%
     \or oitenta%
@@ -188,7 +188,7 @@
     \or Vinte%
     \or Trinta%
     \or Quarenta%
-    \or Cinq\"uenta%
+    \or Cinquenta%
     \or Sessenta%
     \or Setenta%
     \or Oitenta%
@@ -412,7 +412,7 @@
     \or vig\'esimo%
     \or trig\'esimo%
     \or quadrag\'esimo%
-    \or q\"uinquag\'esimo%
+    \or quinquag\'esimo%
     \or sexag\'esimo%
     \or setuag\'esimo%
     \or octog\'esimo%
@@ -439,7 +439,7 @@
     \or ducent\'esimo%
     \or trecent\'esimo%
     \or quadringent\'esimo%
-    \or q\"uingent\'esimo%
+    \or quingent\'esimo%
     \or seiscent\'esimo%
     \or setingent\'esimo%
     \or octingent\'esimo%
@@ -474,7 +474,7 @@
     \or vig\'esima%
     \or trig\'esima%
     \or quadrag\'esima%
-    \or q\"uinquag\'esima%
+    \or quinquag\'esima%
     \or sexag\'esima%
     \or setuag\'esima%
     \or octog\'esima%
@@ -491,7 +491,7 @@
     \or ducent\'esima%
     \or trecent\'esima%
     \or quadringent\'esima%
-    \or q\"uingent\'esima%
+    \or quingent\'esima%
     \or seiscent\'esima%
     \or setingent\'esima%
     \or octingent\'esima%
@@ -526,7 +526,7 @@
     \or Vig\'esimo%
     \or Trig\'esimo%
     \or Quadrag\'esimo%
-    \or Q\"uinquag\'esimo%
+    \or Quinquag\'esimo%
     \or Sexag\'esimo%
     \or Setuag\'esimo%
     \or Octog\'esimo%
@@ -543,7 +543,7 @@
     \or Ducent\'esimo%
     \or Trecent\'esimo%
     \or Quadringent\'esimo%
-    \or Q\"uingent\'esimo%
+    \or Quingent\'esimo%
     \or Seiscent\'esimo%
     \or Setingent\'esimo%
     \or Octingent\'esimo%
@@ -578,7 +578,7 @@
     \or Vig\'esima%
     \or Trig\'esima%
     \or Quadrag\'esima%
-    \or Q\"uinquag\'esima%
+    \or Quinquag\'esima%
     \or Sexag\'esima%
     \or Setuag\'esima%
     \or Octog\'esima%
@@ -595,7 +595,7 @@
     \or Ducent\'esima%
     \or Trecent\'esima%
     \or Quadringent\'esima%
-    \or Q\"uingent\'esima%
+    \or Quingent\'esima%
     \or Seiscent\'esima%
     \or Setingent\'esima%
     \or Octingent\'esima%
@@ -635,12 +635,8 @@
     \@strctr=#1 \divide\@strctr by 1000\relax
     \@FCmodulo{\@strctr}{10}%
     \ifnum\@strctr>0
-      \ifnum\@strctr=1\relax
-        \let\@@fc@numstr#2\relax
-        \protected@edef#2{\@@fc@numstr\ \@andname}%
-      \fi
       \let\@@fc@numstr#2\relax
-      \protected@edef#2{\@@fc@numstr\ \@unitstring{\@strctr}}%
+      \protected@edef#2{\@@fc@numstr\ \@andname\ \@unitstring{\@strctr}}%
     \fi
   \else
     \@strctr=#1\relax
@@ -666,7 +662,7 @@
 \ifnum\@strctr>0\relax
   \ifnum#1>1000 \relax
     \let\@@fc@numstr#2\relax
-    \protected@edef#2{\@@fc@numstr\ }%
+    \protected@edef#2{\@@fc@numstr\ \@andname\ }%
   \fi
   \@tmpstrctr=#1\relax
   \@FCmodulo{\@tmpstrctr}{1000}%
@@ -690,15 +686,8 @@
   \protected@edef#2{\@@fc@numstr\@tenstring{\@strctr}}%
   \@strctr=#1\relax \@FCmodulo{\@strctr}{10}%
   \ifnum\@strctr>0
-    \ifnum\@strctr=1\relax
-      \let\@@fc@numstr#2\relax
-      \protected@edef#2{\@@fc@numstr\ \@andname}%
-    \else
-      \ifnum#1>100\relax
-        \let\@@fc@numstr#2\relax
-        \protected@edef#2{\@@fc@numstr\ \@andname}%
-      \fi
-    \fi
+    \let\@@fc@numstr#2\relax
+    \protected@edef#2{\@@fc@numstr\ \@andname}%
     \let\@@fc@numstr#2\relax
     \protected@edef#2{\@@fc@numstr\ \@unitstring{\@strctr}}%
   \fi
