@@ -1,9 +1,9 @@
 
 %\subsection{fmtcount.sty}
-% This section deals with the code for |fmtcount.sty|
+% This section deals with the code for \verb|fmtcount.sty|.
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{fmtcount}[2024/10/18 v3.09]
+\ProvidesPackage{fmtcount}[2024/10/18 v3.09 Displaying the values of LaTeX counters (NT,VB,NE)]
 \RequirePackage{ifthen}
 %    \end{macrocode}
 % \changes{3.01}{2014/12/03}{Use \styfmt{xkeyval} instead of \styfmt{keyval}, so that we do not get in trouble
@@ -28,7 +28,7 @@
 % These commands need to be defined before the
 % configuration file is loaded.
 %
-% Define the macro to format the |st|, |nd|, |rd| or |th| of an 
+% Define the macro to format the \verb|st|, \verb|nd|, \verb|rd| or \verb|th| of an
 % ordinal.
 % \changes{3.01}{2014/12/3}{Make \cs{fmtord} language dependent.}
 % \changes{3.01}{2014/12/3}{Substitute \cs{textsuperscript} for \cs{fc@textsuperscript}, and define
@@ -477,7 +477,7 @@ dutch}
 }
 %    \end{macrocode}
 %\end{macro}
-% The following registers are needed by |\@ordinal| etc
+% The following registers are needed by \verb|\@ordinal| etc
 %    \begin{macrocode}
 \newcount\@ordinalctr
 \newcount\@orgargctr
@@ -2063,13 +2063,11 @@ dutch}
    \else
        \@setdef@ultfmtcount
    \fi\fi
-}
 %    \end{macrocode}
 % \changes{3.01}{2014/12/03}{Substitute \cs{textsuperscript} for \cs{fc@textsuperscript}, and define
 % \cs{fc@textsuperscript} as \cs{fup} when defined at beginning of document, or as \cs{textsuperscript}
 % otherwise}
 %    \begin{macrocode}
-\AtBeginDocument{%
    \ifcsundef{FBsupR}{\let\fc@textsuperscript\textsuperscript}{\let\fc@textsuperscript\fup}%
 }
 %    \end{macrocode}
@@ -2081,6 +2079,4 @@ dutch}
 \let\@numberstring=\@numberstringM
 \let\@Numberstring=\@NumberstringM
 %    \end{macrocode}
-\iffalse Local variables: \fi
-\iffalse mode: docTeX     \fi
-\iffalse End:             \fi
+% \setcounter{CodelineNo}{0}

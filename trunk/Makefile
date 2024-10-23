@@ -14,7 +14,7 @@ dist ctan : README CHANGES fmtcount-manual.tex \
 	$(MAKE) -C $(DIST) ctan
 
 $(addprefix $(DIST)/,$(DOCSTRIP))	: $(DTX_DEPENDANCIES)
-	makedtx -author "Nicola Talbot and Vincent Belaïche" \
+	makedtx -author "Nicola Talbot, Vincent Belaïche and Erik Nijenhuis" \
 		-src "(.+)\.(sty|def)$$=>\1.\2" \
 		-doc fmtcount-manual.tex fmtcount
 	./cp2dist -m $(addprefix -f$(SPACE),$(STYFILES)) fmtcount.{dtx,ins} $(DIST)

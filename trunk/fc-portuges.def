@@ -800,6 +800,4 @@ this number}%
 }%
 \global\let\@@ordinalstringportuges\@@ordinalstringportuges
 %    \end{macrocode}
-\iffalse Local variables: \fi
-\iffalse mode: docTeX     \fi
-\iffalse End:             \fi
+% \setcounter{CodelineNo}{0}
