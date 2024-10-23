@@ -2063,13 +2063,11 @@ dutch}
    \else
        \@setdef@ultfmtcount
    \fi\fi
-}
 %    \end{macrocode}
 % \changes{3.01}{2014/12/03}{Substitute \cs{textsuperscript} for \cs{fc@textsuperscript}, and define
 % \cs{fc@textsuperscript} as \cs{fup} when defined at beginning of document, or as \cs{textsuperscript}
 % otherwise}
 %    \begin{macrocode}
-\AtBeginDocument{%
    \ifcsundef{FBsupR}{\let\fc@textsuperscript\textsuperscript}{\let\fc@textsuperscript\fup}%
 }
 %    \end{macrocode}
