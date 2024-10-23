@@ -6,7 +6,7 @@
 %    \begin{macrocode}
 \FCloadlang{german}%
 %    \end{macrocode}
-% Set |germanb| to be equivalent to |german|.
+% Set \verb|germanb| to be equivalent to \verb|german|.
 %    \begin{macrocode}
 \global\let\@ordinalMgermanb=\@ordinalMgerman
 \global\let\@ordinalFgermanb=\@ordinalFgerman

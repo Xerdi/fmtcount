@@ -67,8 +67,8 @@
 }%
 \global\let\@@tenstringgerman\@@tenstringgerman
 %    \end{macrocode}
-% \cs{einhundert} is set to |einhundert| by default, user can
-% redefine this command to just |hundert| if required, similarly
+% \cs{einhundert} is set to \verb|einhundert| by default, user can
+% redefine this command to just \verb|hundert| if required, similarly
 % for \cs{eintausend}.
 %    \begin{macrocode}
 \providecommand*{\einhundert}{einhundert}%
@@ -364,10 +364,10 @@
 }%
 \global\let\@@teenthstringNgerman\@@teenthstringNgerman
 %    \end{macrocode}
-% This appends the results to |\#2| for number |\#2| (in range 0 to
+% This appends the results to \verb|\#2| for number \verb|\#2| (in range 0 to
 % 100.)
 % null and eins are dealt with separately in
-% |\@@numberstringgerman|.
+% \verb|\@@numberstringgerman|.
 %    \begin{macrocode}
 \newcommand*\@@numberunderhundredgerman[2]{%
 \ifnum#1<10\relax

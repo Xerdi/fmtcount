@@ -3,7 +3,7 @@
 \ProvidesFCLanguage{ngermanb}[2013/08/17]%
 \FCloadlang{german}%
 %    \end{macrocode}
-% Set |ngermanb| to be equivalent to |german|. Is it okay to do
+% Set \verb|ngermanb| to be equivalent to \verb|german|. Is it okay to do
 % this? (I don't know the difference between the two.)
 %    \begin{macrocode}
 \global\let\@ordinalMngermanb=\@ordinalMgerman

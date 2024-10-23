@@ -3,7 +3,7 @@
 \ProvidesFCLanguage{francais}[2013/08/17]%
 \FCloadlang{french}%
 %    \end{macrocode}
-% Set |francais| to be equivalent to |french|.
+% Set \verb|francais| to be equivalent to \verb|french|.
 %    \begin{macrocode}
 \global\let\@ordinalMfrancais=\@ordinalMfrench
 \global\let\@ordinalFfrancais=\@ordinalFfrench
