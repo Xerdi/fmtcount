@@ -565,6 +565,4 @@ this number}%
 \global\let\@OrdinalstringFenglish=\@OrdinalstringMenglish
 \global\let\@OrdinalstringNenglish=\@OrdinalstringMenglish
 %    \end{macrocode}
-\iffalse Local variables: \fi
-\iffalse mode: docTeX     \fi
-\iffalse End:             \fi
+% \setcounter{CodelineNo}{0}

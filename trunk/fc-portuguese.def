@@ -24,4 +24,4 @@
 \global\let\@OrdinalstringFportuguese=\@OrdinalstringFportuges
 \global\let\@OrdinalstringNportuguese=\@OrdinalstringNportuges
 %    \end{macrocode}
-
+% \setcounter{CodelineNo}{0}
