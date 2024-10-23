@@ -10,7 +10,7 @@ In the trunk/ directory you can run "make dist" to generate the .dtx
 and .ins files (which will be put in the dist/ directory).
 Alternatively, you can run makedtx explicitly:
 
-        makedtx -author "Nicola Talbot and Vincent Belaïche" \
+        makedtx -author "Nicola Talbot, Vincent Belaïche and Erik Nijenhuis" \
                 -src "(.+)\.(sty)=>\1.\2" \
                 -src "(.+)\.(def)=>\1.\2" \
                 -doc fmtcount-manual.tex fmtcount

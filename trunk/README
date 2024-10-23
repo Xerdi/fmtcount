@@ -2,7 +2,7 @@ LaTeX Package : fmtcount v%%VERSION%%
 
 Last Modified : %%DATE%%
 
-Author        : Nicola Talbot and Vincent Belaïche
+Author        : Nicola Talbot, Vincent Belaïche and Erik Nijenhuis
 
 Files         : fmtcount.dtx   - documented source file
                 fmtcount.ins   - installation script
