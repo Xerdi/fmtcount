@@ -41,24 +41,24 @@ fmtcount.zip	: fmtcount.tds.zip
 	zip -r fmtcount.zip fmtcount/ fmtcount.tds.zip
 
 $(STYFILES):%: $(DOCSTRIP)
-		latex $<
+	latex $<
 
 fmtcount.pdf	: $(DOCSTRIP)
-		-latex $<
-		pdflatex fmtcount.dtx
-		makeindex -s gind.ist fmtcount.idx
-		makeindex -s gglo.ist -o fmtcount.gls fmtcount.glo
-		pdflatex fmtcount.dtx
-		pdflatex fmtcount.dtx
+	-latex $<
+	pdflatex fmtcount.dtx
+	makeindex -s gind.ist fmtcount.idx
+	makeindex -s gglo.ist -o fmtcount.gls fmtcount.glo
+	pdflatex fmtcount.dtx
+	pdflatex fmtcount.dtx
 
 $(DOCSTRIP):%: $(addprefix $(SRC)/,$(DTX_DEPENDANCIES))
 	$(MAKE) -C ../trunk dist
 
 fmtcount-manual.html	: fmtcount-manual.tex
-			ht latex fmtcount-manual
-			tex '\def\filename{{fmtcount-manual}{idx}{4dx}{ind}} \input idxmake.4ht'
-			makeindex -s gind.ist -o fmtcount-manual.ind fmtcount-manual.4dx
-			ht latex fmtcount-manual
+	ht latex fmtcount-manual
+	tex '\def\filename{{fmtcount-manual}{idx}{4dx}{ind}} \input idxmake.4ht'
+	makeindex -s gind.ist -o fmtcount-manual.ind fmtcount-manual.4dx
+	ht latex fmtcount-manual
 
 html	: fmtcount-manual.html 
 
@@ -73,6 +73,6 @@ realclean squeaky:%: clean
 	command rm -f fmtcount-manual.{html,tex}
 	command rm -f fmtcount-manual*.png
 	command rm -f *.sty *.def
-	command rm -f README CHANGES 
+	command rm -f README CHANGES
 	command rm -rf doc/ tex/ source/ fmtcount/ scripts/
 	command rm -f fmtcount.zip fmtcount.tds.zip

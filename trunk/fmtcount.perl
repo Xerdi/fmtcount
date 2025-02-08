@@ -1,5 +1,5 @@
 # File        : fmtcount.perl
-# Author      : Nicola Talbot
+# Author      : Nicola Talbot (inactive)
 # Date        : 2012-09-25
 # Version     : 1.06
 # Description : LaTeX2HTML implementation of fmtcount package
