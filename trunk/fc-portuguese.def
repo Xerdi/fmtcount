@@ -6,7 +6,7 @@
 %    \begin{macrocode}
 \FCloadlang{portuges}%
 %    \end{macrocode}
-% Set |portuguese| to be equivalent to |portuges|.
+% Set \verb|portuguese| to be equivalent to \verb|portuges|.
 %    \begin{macrocode}
 \global\let\@ordinalMportuguese=\@ordinalMportuges
 \global\let\@ordinalFportuguese=\@ordinalFportuges
@@ -24,4 +24,4 @@
 \global\let\@OrdinalstringFportuguese=\@OrdinalstringFportuges
 \global\let\@OrdinalstringNportuguese=\@OrdinalstringNportuges
 %    \end{macrocode}
-
+% \setcounter{CodelineNo}{0}

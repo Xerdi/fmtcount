@@ -39,11 +39,9 @@
 \usepackage[colorlinks,
             bookmarks,
             bookmarksopen,
-            pdfauthor={Nicola L.C. Talbot},
+            pdfauthor={Nicola L.C. Talbot, Vincent Belaïche and Erik Nijenhuis},
             pdftitle={fmtcount.sty: Displaying the Values of LaTeX Counters},
             pdfkeywords={LaTeX,counter}]{hyperref}
-
-\CheckSum{10802}
 
 \doxitem{Option}{option}{options}
 
@@ -59,13 +57,15 @@
 
 \begin{document}
 \RecordChanges
-
  \title{fmtcount.sty: Displaying the Values of 
 \LaTeX\ Counters}
  \author{Nicola L.C. Talbot\\
- \url{www.dickimaw-books.com}
+ \href{https://www.dickimaw-books.com}{dickimaw-books.com}
  \and
- Vincent Bela\"iche}
+ Vincent Bela\"iche
+ \and
+ Erik Nijenhuis\\
+ \href{https://github.com/Xerdi/fmtcount}{github.com/Xerdi/fmtcount}}
  \date{%%DATE%% (version %%VERSION%%)\relax
 }
  \maketitle
@@ -797,16 +797,16 @@ blini/blinis\fg, alors que \og blini\fg\ veut dire \og crêpes\fg\ (au pluriel).
 
 \selectlanguage{english}
 
-%\subsection{Prefixes}
-%\label{sec:latin-prefixes}
-%
-%\begin{definition}[\DescribeMacro{\latinnumeralstring}]
-%\cs{latinnumeralstring}\marg{counter}\oarg{prefix options}
-%\end{definition}
-%
-%\begin{definition}[\DescribeMacro{\latinnumeralstringnum}]
-%\cs{latinnumeralstringnum}\marg{number}\oarg{prefix options}
-%\end{definition}
+\subsection{Prefixes}
+\label{sec:latin-prefixes}
+
+\begin{definition}[\DescribeMacro{\latinnumeralstring}]
+\cs{latinnumeralstring}\marg{counter}\oarg{prefix options}
+\end{definition}
+
+\begin{definition}[\DescribeMacro{\latinnumeralstringnum}]
+\cs{latinnumeralstringnum}\marg{number}\oarg{prefix options}
+\end{definition}
 
 
 \section{Configuration File \texttt{fmtcount.cfg}}
@@ -904,14 +904,8 @@ I would like to thank all the people who have provided translations and made bug
 
 \section{Troubleshooting}
 
-There is a FAQ available at: 
-\url{http://theoval.cmp.uea.ac.uk/~nlct/latex/packages/faq/}.
+Bug reporting should be done via the GitHub issue manager at:
 
-Bug reporting should be done via the Github issue manager at: 
-\url{https://github.com/nlct/fmtcount/issues/}.
+\href{https://github.com/Xerdi/fmtcount/issues/}{github.com/Xerdi/fmtcount/issues/}.
 
 \end{document}
-% Local Variables:
-% coding: utf-8
-% compile-command: "make -C ../dist fmtcount.pdf"
-% End:

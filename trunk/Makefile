@@ -14,13 +14,14 @@ dist ctan : README CHANGES fmtcount-manual.tex \
 	$(MAKE) -C $(DIST) ctan
 
 $(addprefix $(DIST)/,$(DOCSTRIP))	: $(DTX_DEPENDANCIES)
-	makedtx -author "Nicola Talbot and Vincent Belaïche" \
+	makedtx -author "Nicola Talbot (inactive), Vincent Belaïche and Erik Nijenhuis" \
 		-src "(.+)\.(sty|def)$$=>\1.\2" \
+		-setambles '(.*)\.(sty|def)=>\nopreamble\usepreamble\defaultpreamble' \
 		-doc fmtcount-manual.tex fmtcount
 	./cp2dist -m $(addprefix -f$(SPACE),$(STYFILES)) fmtcount.{dtx,ins} $(DIST)
 
 $(DIST)/fmtcount.pdf	: $(addprefix $(DIST)/,$(DOCSTRIP))
-			$(MAKE) -C $(DIST) fmtcount.pdf
+	$(MAKE) -C $(DIST) fmtcount.pdf
 
 $(DIST)/fmtcount-manual.tex	: fmtcount-manual.tex
 	./cp2dist $(addprefix -f$(SPACE),$(STYFILES)) fmtcount-manual.tex $(DIST)

@@ -2,14 +2,14 @@ LaTeX Package : fmtcount v%%VERSION%%
 
 Last Modified : %%DATE%%
 
-Author        : Nicola Talbot and Vincent Belaïche
+Author        : Nicola Talbot (inactive), Vincent Belaïche and Erik Nijenhuis
 
 Files         : fmtcount.dtx   - documented source file
                 fmtcount.ins   - installation script
-		fmtcount.perl  - latex2html style file
-		fc-samp.tex       \
-		fc-lang.tex        - sample files
-	        fc-frlargenum.tex /
+                fmtcount.perl  - latex2html style file
+                fc-samp.tex       \
+                fc-lang.tex        - sample files
+                fc-frlargenum.tex /
 
 The package fmtcount.sty provides commands 
 that display the value of a LaTeX counter in a variety 
@@ -36,10 +36,10 @@ find it (e.g. latex2html/styles/).
 
 To extract the documentation do:
 
-latex fmtcount.dtx
+pdflatex fmtcount.dtx
 makeindex -s gglo.ist -t fmtcount.glg -o fmtcount.gls fmtcount.glo
-latex fmtcount.dtx
-latex fmtcount.dtx
+pdflatex fmtcount.dtx
+pdflatex fmtcount.dtx
 
 Place the resulting file (fmtcount.dvi) into the documentation
 directory (e.g. texmf/doc/latex/fmtcount/).
@@ -49,4 +49,8 @@ Read the file CHANGES for version changes.
 This material is subject to the LaTeX Project Public License.  See
 https://www.ctan.org/license/lppl for the details of that license.
 
-http://www.dickimaw-books.com/
+Package info:
+    https://ctan.org/pkg/fmtcount
+
+Issues:
+    https://github.com/Xerdi/fmtcount/issues
