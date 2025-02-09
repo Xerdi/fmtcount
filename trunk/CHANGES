@@ -1,5 +1,11 @@
 fmtcount package versions:
 
+Version 3.10
+
+* Improve documentation
+
+* Solve DTX output errors
+
 Version 3.09
 
 * Remove redundant \"u occurences in Portuguese
