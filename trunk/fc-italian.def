@@ -1,4 +1,4 @@
-% \subsubsection{fc-italian}
+% \subsubsection{fc-italian.def}
 % Italian support is now handled by interfacing to Enrico Gregorio's
 % itnumpar package.
 %    \begin{macrocode}

@@ -1,5 +1,11 @@
 fmtcount package versions:
 
+Version 3.11
+
+* Improve documentation
+
+* Fix bug in italian capitalized ordinals
+
 Version 3.10
 
 * Improve documentation
