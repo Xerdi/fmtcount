@@ -352,7 +352,7 @@ overwrite_short:
 		echo "Overwriting reference of test short-$$1"; \
 		cp -f tests/test-short-$$1-nodate.html reference/test-short-$$1.html; \
 	}; \
-	for w in $(SHORT); do \
+	for w in $(LANG_short); do \
 		if diff -abs tests/test-short-$$w-nodate.html reference/test-short-$$w.html > /dev/null; \
 		then echo "Test short-$$w ok"; else \
 			if [ $$o == no ]; then \
