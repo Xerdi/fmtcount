@@ -74,6 +74,15 @@
 }
 \global\let\@OrdinalstringMitalian\@OrdinalstringMitalian
 
+\newcommand{\@ORDINALSTRINGMitalian}[2]{%
+  \begingroup
+    \count@=#1
+    \edef\@tempa{\def\noexpand#2{\MakeUppercase{\@ordinalem{\count@}}}}%
+    \expandafter
+  \endgroup\@tempa
+}
+\global\let\@ORDINALSTRINGMitalian\@ORDINALSTRINGMitalian
+
 \newcommand{\@OrdinalstringFitalian}[2]{%
   \begingroup
     \count@=#1
@@ -82,6 +91,15 @@
   \endgroup\@tempa
 }
 \global\let\@OrdinalstringFitalian\@OrdinalstringFitalian
+
+\newcommand{\@ORDINALSTRINGFitalian}[2]{%
+  \begingroup
+    \count@=#1
+    \edef\@tempa{\def\noexpand#2{\MakeUppercase{\@ordinalef{\count@}}}}%
+    \expandafter
+  \endgroup\@tempa
+}
+\global\let\@ORDINALSTRINGFitalian\@ORDINALSTRINGFitalian
 
 \newcommand{\@ordinalMitalian}[2]{%
   \edef#2{#1\relax\noexpand\fmtord{o}}}
