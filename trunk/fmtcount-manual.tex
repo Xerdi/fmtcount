@@ -870,8 +870,8 @@ When the tailing optional argument is omitted, then any subsequent space will:
 
 So (where we use visible spaces ``\verb*! !'' to demonstrate the point):
 \begin{itemize}
-\item ``x\cs{odinalnum\{2\}}\verb*! !\texttt{x}'' will be typeset to ``x\ordinalnum{2}\textvisiblespace x'', while
-\item ``x\cs{storeodinalnum\{mylabel\}\{2\}}\verb*! !\texttt{x}'' will be typeset to ``xx''.
+\item ``x\cs{ordinalnum\{2\}}\verb*! !\texttt{x}'' will be typeset to ``x\ordinalnum{2}\textvisiblespace x'', while
+\item ``x\cs{storeordinalnum\{mylabel\}\{2\}}\verb*! !\texttt{x}'' will be typeset to ``xx''.
 \end{itemize}
 
 The reason for this design choice is that the commands like like \cs{ordinal} or \cs{numbestring} are usually
