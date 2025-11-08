@@ -244,7 +244,7 @@ dutch}
 \newcommand*\@fc@loadifbabelldf[1]{\ifcsundef{ver@#1.ldf}{}{\FCloadlang{#1}}}
 \newcommand*{\@fc@loadifbabelorpolyglossialdf}[1]{}
 \@ifpackageloaded{polyglossia}{%
-  \def\@fc@loadifbabelorpolyglossialdf#1{\IfFileExists{gloss-#1.ldf}{\ifcsundef{#1@loaded}{}{\FCloadlang{#1}}}{}%
+  \def\@fc@loadifbabelorpolyglossialdf#1{\IfFileExists{gloss-#1.ldf}{\iflanguageloaded{#1}{\FCloadlang{#1}}{}}{}%
     \@fc@loadifbabelldf{#1}%
   }%
 }{\@ifpackageloaded{babel}{%
