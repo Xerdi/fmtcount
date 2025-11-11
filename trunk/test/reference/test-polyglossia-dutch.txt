@@ -1,5 +1,5 @@
 Inhoudsopgave
-1 \FCordinal in a title: 18.
+1 \FCordinal in a title: 18e
 
 1
 
@@ -9,7 +9,7 @@ Inhoudsopgave
 
 1
 
-\FCordinal in a title: 18.
+\FCordinal in a title: 18e
 
 2
 

@@ -4,10 +4,25 @@
 \ProvidesFCLanguage{dutch}[2024/01/27]%
 %    \end{macrocode}
 % Define macro that converts a number or count register (first
-% argument) to an ordinal, and stores the result in the
+% argument) to a numeric ordinal, and stores the result in the
 % second argument, which should be a control sequence.
+% Dutch numeric ordinals use ``ste'' for multiples of 10 from 20
+% upward (e.g., 20ste, 30ste, 100ste, 120ste), and ``e'' for all
+% other numbers (e.g., 1e, 10e, 18e, 21e, 101e).
 %    \begin{macrocode}
-\newcommand{\@ordinalMdutch}[2]{\edef#2{\number#1\relax.}}%
+\newcommand{\@ordinalMdutch}[2]{%
+  \@tempcnta=#1\relax
+  \@FCmodulo{\@tempcnta}{10}%
+  \ifnum\@tempcnta=0\relax
+    \ifnum#1<20\relax
+      \edef#2{\number#1\relax e}%
+    \else
+      \edef#2{\number#1\relax ste}%
+    \fi
+  \else
+    \edef#2{\number#1\relax e}%
+  \fi
+}%
 \global\let\@ordinalMdutch\@ordinalMdutch
 %    \end{macrocode}
 % Like English, there is no gender difference in Dutch,
@@ -83,7 +98,9 @@
 \global\let\honderd\honderd
 \global\let\duizend\duizend
 %    \end{macrocode}
-% The numberstring implementation:
+% The numberstring implementation. Converts numbers to Dutch words
+% (e.g., 18 becomes ``achttien'', 100 becomes ``honderd'').
+% Supports numbers from 0 to 99999.
 %    \begin{macrocode}
 \newcommand*\@@numberstringdutch[2]{%
     \ifnum#1>99999\relax
@@ -225,7 +242,9 @@
 }%
 \global\let\@@teenthstringdutch\@@teenthstringdutch
 %    \end{macrocode}
-% The ordinalstring implementation:
+% The ordinalstring implementation. Converts numbers to Dutch ordinal
+% words (e.g., 18 becomes ``achttiende'', 100 becomes ``honderdste'').
+% Supports numbers from 0 to 99999.
 %    \begin{macrocode}
 \newcommand*\@@ordinalstringdutch[2]{%
     \@orgargctr=#1\relax
@@ -333,7 +352,9 @@
 \global\let\@OrdinalstringFdutch=\@OrdinalstringMdutch
 \global\let\@OrdinalstringNdutch=\@OrdinalstringMdutch
 %    \end{macrocode}
-% For numbers under hunderd:
+% Helper macro for formatting numbers under 100 as words.
+% Handles units (1--9), teens (10--19), and compound numbers (20--99)
+% with proper diaeresis where needed.
 %    \begin{macrocode}
 \newcommand*{\@@numberunderhundreddutch}[2]{%
     \ifnum#1<10\relax
@@ -349,8 +370,9 @@
     \ifnum\@tmpstrctr=0\relax
     \else
 %    \end{macrocode}
-% For digits ending with an `e', a trema gets added for \cs{@andname}.
-% Take for example drieëntwintig or tweeënveertig.
+% For digits ending with an `e', a diaeresis (trema) gets added to
+% \cs{@andname} to prevent ambiguity in pronunciation.
+% Examples: drieëntwintig (23), tweeënveertig (42).
 %    \begin{macrocode}
     \ifnum\@tmpstrctr=2\relax\def\@andname{ën}%
     \else\ifnum\@tmpstrctr=3\relax\def\@andname{ën}%
