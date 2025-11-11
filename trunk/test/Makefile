@@ -296,7 +296,7 @@ else ifeq ($(USE_DOCSTRIP),no)
 $(addprefix tests/,$(STYFILES)):tests/%:../% tests/.dir
 	cd tests; ln -s ../$< $(notdir $@)
 else
-$(error $(error USE_DOCSTRIP flag shall be set to one of yes no awk)
+$(error $(error USE_DOCSTRIP flag shall be set to one of yes no awk))
 endif
 
 # trigger regeneration of the STYFILES with the USE_DOCSTRIP variable
