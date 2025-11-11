@@ -1,6 +1,10 @@
  % This file is public domain
 \documentclass{article}
-\usepackage{xunicode,polyglossia}
+\ifcsname directlua\endcsname
+\else
+\usepackage{xunicode}
+\fi
+\usepackage{polyglossia}
 \DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ } 
 
 \setmainlanguage{french}

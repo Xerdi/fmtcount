@@ -8,5 +8,6 @@
 *.idx
 *.out
 test-crossref-*.tex
+test-polyglossia-*.tex
 test/tests
 test/pdftests

@@ -1,0 +1,22 @@
+Inhaltsverzeichnis
+1 \FCordinal in a title: 18.
+
+1
+
+2 \numberstring in a title: achtzehn
+
+1
+
+1
+
+\FCordinal in a title: 18.
+
+2
+
+\numberstring in a title: achtzehn
+
+zehn ERSTE ZWEITER NEUNZEHNTER
+
+1
+
+

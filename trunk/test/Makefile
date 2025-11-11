@@ -57,11 +57,14 @@ LATEX_TESTS:=fc-samp fc-frlargenum $(CROSSREF_TESTS)
 
 # Tests with xelatex sample-polyglossia
 #------------------------------------------------------------------------------------------------------------
-XELATEX_TESTS:=sample-polyglossia
+# For XeLaTeX, run one test per language in LANG_short (no standalone base sample needed)
+XELATEX_LANG_TESTS:=$(addprefix test-polyglossia-,$(LANG_short))
+XELATEX_TESTS:=$(XELATEX_LANG_TESTS)
 
-# Tests with lualatex sample-polyglossia-lua
+# Tests with lualatex using the same per-language sources as XeLaTeX
 #------------------------------------------------------------------------------------------------------------
-LUALATEX_TESTS:=sample-polyglossia-lua
+LUALATEX_LANG_TESTS:=$(addprefix test-polyglossia-lua-,$(LANG_short))
+LUALATEX_TESTS:=$(LUALATEX_LANG_TESTS)
 
 PDF_TESTS:=$(LATEX_TESTS) $(XELATEX_TESTS) $(LUALATEX_TESTS)
 
@@ -169,6 +172,23 @@ define PDF_ACTIONS
 	fi
 endef
 
+# Variant of PDF_ACTIONS that allows overriding the output base name via --jobname
+# Use when the built PDF/TXT base name differs from the target stem.
+# $(1): extra latexmk options (e.g., -r <rcfile> -jobname=<name>)
+# $(2): explicit base name to use for pdftotext/diff and log (must match jobname)
+define PDF_ACTIONS_AS
+	cd pdftests; \
+	if latexmk --interaction=nonstopmode $(1) ../$<; \
+	then \
+		pdftotext $(2).pdf  $(2).txt; \
+		if diff -abs $(2).txt ../reference/$(2).txt; then \
+			echo "Test $(2): ok" >> ../pdftests.log; \
+		else echo "Test $(2): failed" >> ../pdftests.log; \
+		fi; \
+	else echo "Test $(2): failed" >> ../pdftests.log; \
+	fi
+endef
+
 $(patsubst %,pdftests/%.pdf,$(LATEX_TESTS)):pdftests/%.pdf:$(SAMPLE_DIR)/%.tex $(patsubst %,pdftests/%,$(STYFILES)) echo_pdftest pdftests/.dir
 	$(call PDF_ACTIONS,-pdf -interaction=nonstopmode)
 
@@ -179,11 +199,46 @@ $(patsubst %,$(SAMPLE_DIR)/%.tex,$(CROSSREF_TESTS)):$(SAMPLE_DIR)/%.tex: $(SAMPL
 	awk 'BEGIN { n=split("$*",a,"+"); if( n == 3){ split(a[1],b,"-"); lang=b[3]; macro=a[3];} else { macro = a[2]; }} ; /^ *\\documentclass/ && n == 3 { sub(/\[[^]]*/,"&," lang)}; /renewcommand/ { sub(/numberstring/,macro);}; {print}' $< > $@
 
 
-$(patsubst %,pdftests/%.pdf,$(XELATEX_TESTS)):pdftests/%.pdf:$(SAMPLE_DIR)/%.tex $(patsubst %,pdftests/%,$(STYFILES)) \
+# Auto-generate per-language polyglossia samples from the base sample
+# Map LANG_short (mostly babel names) to polyglossia language names
+# - UKenglish, british   -> british
+# - USenglish, american  -> american
+# - francais, french, frenchb -> french
+# - german, germanb, ngerman, ngermanb -> german (default new orthography)
+# - dutch, italian, spanish -> same name
+# Fallback: use the name as-is
+define MAP_PGX_LANG
+$(strip $(if $(filter UKenglish british,$(1)),british,\
+$(if $(filter USenglish american,$(1)),american,\
+$(if $(filter francais french frenchb,$(1)),french,\
+$(if $(filter german germanb ngerman ngermanb,$(1)),german,\
+$(if $(filter dutch,$(1)),dutch,\
+$(if $(filter italian,$(1)),italian,\
+$(if $(filter spanish,$(1)),spanish,$(1)))))))))
+endef
+
+# Generate a specialized .tex per language by rewriting \setmainlanguage{...}
+# Keep the file otherwise identical; do not inject fmtcount-specific lines.
+# Note: generate as test-polyglossia-<lang>.tex so generated files are not staged in git.
+$(patsubst %,$(SAMPLE_DIR)/test-polyglossia-%.tex,$(LANG_short)): $(SAMPLE_DIR)/sample-polyglossia.tex
+	awk -v L="$(call MAP_PGX_LANG,$(patsubst test-polyglossia-%,%,$(basename $(notdir $@))))" '/^\\setmainlanguage/ { sub(/\{[^}]*\}/,"{" L "}") } { print }' $< > $@
+
+# Build XeLaTeX per-language PDFs from the generated test-polyglossia-<lang>.tex,
+# but keep the PDF/test names as sample-polyglossia-<lang> to match reference files.
+pdftests/sample-polyglossia-%.pdf: $(SAMPLE_DIR)/test-polyglossia-%.tex $(patsubst %,pdftests/%,$(STYFILES)) echo_pdftest pdftests/.dir
+	$(call PDF_ACTIONS_AS,-r ../xelatex_latexmkrc -jobname=test-polyglossia-$*,test-polyglossia-$*)
+
+$(patsubst %,pdftests/%.pdf,$(filter-out sample-polyglossia-%,$(XELATEX_TESTS))):pdftests/%.pdf:$(SAMPLE_DIR)/%.tex $(patsubst %,pdftests/%,$(STYFILES)) \
 		echo_pdftest pdftests/.dir
 	$(call PDF_ACTIONS,-r ../xelatex_latexmkrc)
 
-$(patsubst %,pdftests/%.pdf,$(LUALATEX_TESTS)):pdftests/%.pdf:$(SAMPLE_DIR)/%.tex $(patsubst %,pdftests/%,$(STYFILES)) \
+# Build LuaLaTeX per-language PDFs from the same test sources as XeLaTeX,
+# naming outputs as test-polyglossia-lua-<lang> via --jobname
+pdftests/test-polyglossia-lua-%.pdf: $(SAMPLE_DIR)/test-polyglossia-%.tex $(patsubst %,pdftests/%,$(STYFILES)) echo_pdftest pdftests/.dir
+	$(call PDF_ACTIONS_AS,-r ../lualatex_latexmkrc -jobname=test-polyglossia-lua-$*,test-polyglossia-$*)
+
+# Generic Lua rule for any other remaining Lua tests (none currently)
+$(patsubst %,pdftests/%.pdf,$(filter-out test-polyglossia-lua-%,$(LUALATEX_TESTS))):pdftests/%.pdf:$(SAMPLE_DIR)/%.tex $(patsubst %,pdftests/%,$(STYFILES)) \
 		echo_pdftest pdftests/.dir
 	$(call PDF_ACTIONS,-r ../lualatex_latexmkrc)
 

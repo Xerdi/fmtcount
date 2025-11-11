@@ -1,0 +1,21 @@
+Índice general
+1 \FCordinal in a title: 18o
+
+1
+
+2 \numberstring in a title: dieciocho
+
+1
+
+1
+
+\FCordinal in a title: 18o
+
+2
+
+\numberstring in a title: dieciocho
+diez PRIMERA SEGUNDO DECIMONOVENO
+
+1
+
+

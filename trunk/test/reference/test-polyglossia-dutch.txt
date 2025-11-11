@@ -1,0 +1,22 @@
+Inhoudsopgave
+1 \FCordinal in a title: 18.
+
+1
+
+2 \numberstring in a title: achttien
+
+1
+
+1
+
+\FCordinal in a title: 18.
+
+2
+
+\numberstring in a title: achttien
+
+tien EERSTE TWEEDE NEGENTIENDE
+
+1
+
+
