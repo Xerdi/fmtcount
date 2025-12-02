@@ -1,5 +1,13 @@
 fmtcount package versions:
 
+Version 3.12
+
+* Implement ordinals for Dutch
+
+* Add polyglossia tests for every language
+
+* Fix polyglossia language detection
+
 Version 3.11
 
 * Improve documentation
