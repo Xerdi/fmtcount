@@ -34,7 +34,7 @@
 %    \end{macrocode}
 %
 % Options for controlling plural mark. First of all we define some temporary macro \cs{fc@french@set@plural}
-% in order to factorize code that defines an plural mark option:\newline\noindent
+% in order to factorize code that defines a plural mark option:\newline\noindent
 % \begin{tabularx}{\linewidth}{@{}>{\raggedleft\arraybackslash\ttfamily}rX@{}}
 % \#1&key name,\\
 % \#2&key value,\\
@@ -153,9 +153,9 @@
 % Option `\texttt{scale}', can take 3 possible values:\newline\noindent
 % \begin{tabularx}{\linewidth}{@{}>{\raggedleft\arraybackslash\ttfamily}rX@{}}
 %  long& for which \meta{\(n\)}illions \& \meta{\(n\)}illiards are used with \(10^{6\times n} = 1
-%   \textrm{\meta{$n$}}illion\), and \(10^{6\times n+3} = 1 \textrm{\meta{$n$}}illiard\)\\
+%   \textrm{ \meta{$n$}illion}\), and \(10^{6\times n+3} = 1 \textrm{ \meta{$n$}illiard}\)\\
 % short& for which \meta{$n$}illions only are used with \(10^{3\times n+3} = 1
-%   \textrm{\meta{$n$}illion}\)\\
+%   \textrm{ \meta{$n$}illion}\)\\
 % recursive& for which \(10^{18} = \textrm{un milliard de milliards}\)
 % \end{tabularx}
 %    \begin{macrocode}
@@ -906,7 +906,7 @@ z\'ero%
 %    \begin{macrocode}
     \count1=\@tempb
 %    \end{macrocode}
-% Let \(n\) and \(r\) the the quotient and remainder of division of weight \(w\) by \(6\), that is to say \(w
+% Let \(n\) and \(r\) be the quotient and remainder of division of weight \(w\) by \(6\), that is to say \(w
 % = n\times 6 + r\) and \(0\leq r < 6\), then \cs{count2} is set to \(n\) and \cs{count3} is set to \(r\).
 %    \begin{macrocode}
     \count2\count0 %
