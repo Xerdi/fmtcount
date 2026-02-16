@@ -262,7 +262,7 @@ example, \verb"\storeordinalnum{mylabel}{3}" will be stored as
 \end{definition}
 
 \begin{definition}[\DescribeMacro{\storeordinalstringnum}]
-\cs{storeordinalstring}\marg{label}\marg{number}\oarg{gender}
+\cs{storeordinalstringnum}\marg{label}\marg{number}\oarg{gender}
 \end{definition}
 
 \begin{definition}[\DescribeMacro{\storeOrdinalstringnum}]
@@ -274,15 +274,15 @@ example, \verb"\storeordinalnum{mylabel}{3}" will be stored as
 \end{definition}
 
 \begin{definition}[\DescribeMacro{\storenumberstringnum}]
-\cs{storenumberstring}\marg{label}\marg{number}\oarg{gender}
+\cs{storenumberstringnum}\marg{label}\marg{number}\oarg{gender}
 \end{definition}
 
 \begin{definition}[\DescribeMacro{\storeNumberstringnum}]
-\cs{storeNumberstring}\marg{label}\marg{number}\oarg{gender}
+\cs{storeNumberstringnum}\marg{label}\marg{number}\oarg{gender}
 \end{definition}
 
 \begin{definition}[\DescribeMacro{\storeNUMBERstringnum}]
-\cs{storeNUMBERstring}\marg{label}\marg{number}\oarg{gender}
+\cs{storeNUMBERstringnum}\marg{label}\marg{number}\oarg{gender}
 \end{definition}
 
 \begin{definition}[\DescribeMacro{\binary}]
@@ -299,7 +299,7 @@ will produce: \padzeroes[8]\binary{section}. The default value for \meta{n} is
 17.
 
 \begin{definition}[\DescribeMacro{\binarynum}]
-\cs{binary}\marg{n}
+\cs{binarynum}\marg{n}
 \end{definition}
 This is like \cs{binary} but takes an actual number rather than a
 counter as the argument. For example: \verb"\binarynum{5}" will
@@ -380,7 +380,7 @@ counter as the argument. For example:
 \cs{aaalph}\marg{counter}
 \end{definition}
 This will print the value of \meta{counter} as: a b \ldots\ z aa bb \ldots\ zz
-etc.  For example, \verb"\aaalpha"\discretionary{}{}{}\verb"{mycounter}" will
+etc.  For example, \verb"\aaalph"\discretionary{}{}{}\verb"{mycounter}" will
 produce: uuuuu if \texttt{mycounter} is set to 125.
 
 \begin{definition}[\DescribeMacro{\AAAlph}]
@@ -578,7 +578,7 @@ L'effet de l'option \texttt{dialect} est illustré ainsi:\newline
   \pkgopt{swiss} &septante pour 70, huitante\footnote{voir
     \href{http://www.alain.be/Boece/huitante_octante.html}{Octante et
       huitante} sur le site d'Alain Lassine} pour 80, et
-  nonante pour 90
+  nonante pour 90.
 \end{tabularx}
 Il est à noter que la variante \texttt{belgian} est parfaitement
 correcte pour les francophones français\footnote{je précise que
@@ -598,7 +598,7 @@ L'option générale \texttt{abbr} permet de changer l'effet de
   \pkgopt{true}& pour produire des ordinaux de la forme
   {\def\languagename{french}\csname fmtord@abbrvtrue\endcsname\ordinalnum{2}} (par défaut), ou\\
   \pkgopt{false}& pour produire des ordinaux de la forme
-  {\def\languagename{french}\csname fmtord@abbrvfalse\endcsname\ordinalnum{2}} \\
+  {\def\languagename{french}\csname fmtord@abbrvfalse\endcsname\ordinalnum{2}}.
 \end{tabularx}
 
 \begin{definition}[\DescribeOption{vingt plural}]
@@ -626,8 +626,8 @@ vingt, cent, mil, et des mots de la forme \meta{\(n\)}illion et \meta{\(n\)}illi
 contrôler de concert l'accord en nombre de tous ces mots. Tous ces paramètres valent \texttt{reformed} par
 défaut.
 
-Attention, comme on va l'expliquer, seules quelques combinaisons de configurations de ces options donnent un
-orthographe correcte vis à vis des règles en vigueur. La raison d'être de ces options est la suivante~:
+Attention, comme on va l'expliquer, seules quelques combinaisons de configurations de ces options donnent une
+orthographe correcte vis-à-vis des règles en vigueur. La raison d'être de ces options est la suivante~:
 \begin{itemize}
 \item la règle de l'accord en nombre des noms de nombre dans un numéral cardinal dépend de savoir s'il a
   vraiment une valeur cardinale ou bien une valeur ordinale, ainsi on écrit \og aller à la page deux-cent
@@ -642,7 +642,7 @@ orthographe correcte vis à vis des règles en vigueur. La raison d'être de ces
   dates, par exemple \og mil neuf cent quatre-vingt quatre\fg\ au lieu de \og mille neuf cent quatre-vingt
   quatre\fg,
 \item finalement les règles du français quoique bien définies ne sont pas très cohérentes et il est donc
-  inévitable qu'un jour ou l'autre on on les simplifie. Le paquetage \styfmt{fmtcount} est déjà prêt à cette
+  inévitable qu'un jour ou l'autre on les simplifie. Le paquetage \styfmt{fmtcount} est déjà prêt à cette
   éventualité.
 \end{itemize}
 
@@ -651,7 +651,7 @@ Le paramètre \meta{french plural control} peut prendre les valeurs suivantes:\n
 \begin{supertabular}{@{}p{\tabcolwidth}p{\dimexpr\linewidth-\tabcolwidth-2\tabcolsep}@{}}
   \pkgopt{traditional}& pour sélectionner la règle en usage chez les adultes à la date de parution de ce
   document, et dans le cas des numéraux cardinaux, lorsqu'ils ont une valeur cardinale,\\
-  \pkgopt{reformed}& pour suivre toute nouvelle recommandation à la date de parution de ce document, , et
+  \pkgopt{reformed}& pour suivre toute nouvelle recommandation à la date de parution de ce document, et
   dans le cas des numéraux cardinaux, lorsqu'ils ont une valeur cardinale, l'idée des options
   \texttt{traditional} et \texttt{reformed} est donc de pouvoir contenter à la fois les anciens et les
   modernes, mais à dire vrai à la date où ce document est écrit elles ont exactement
@@ -662,19 +662,19 @@ Le paramètre \meta{french plural control} peut prendre les valeurs suivantes:\n
   \pkgopt{reformed o}& pareil que \texttt{reformed} mais dans le cas des numéraux cardinaux, lorsqu'ils ont
   une valeur ordinale, de même que précédemment \texttt{reformed o} et \texttt{traditional o} ont
   exactement le même effet,\\
-  \pkgopt{always}& pour marquer toujours le pluriel, ceci n'est correct que pour \og mil\fg\ vis à vis des
+  \pkgopt{always}& pour marquer toujours le pluriel, ceci n'est correct que pour \og mil\fg\ vis-à-vis des
   règles en vigueur,\\
-  \pkgopt{never}& pour ne jamais marquer le pluriel, ceci est incorrect vis à vis des règles d'orthographe
+  \pkgopt{never}& pour ne jamais marquer le pluriel, ceci est incorrect vis-à-vis des règles d'orthographe
   en vigueur,\\
   \pkgopt{multiple}& pour marquer le pluriel lorsque le nombre considéré est multiplié par au moins 2, ceci
   est la règle en vigueur pour les nombres de la forme \meta{\(n\)}illion et \meta{\(n\)}illiard lorsque le
   nombre a une valeur cardinale,\\
   \pkgopt{multiple g-last}& pour marquer le pluriel lorsque le nombre considéré est multiplié par au moins 2
-  est est \emph{\textbf{g}lobalement} en dernière position, où ``globalement'' signifie qu'on considère le
-  nombre formaté en entier, ceci est incorrect vis à vis des règles d'orthographe
+  et est \emph{\textbf{g}lobalement} en dernière position, où ``globalement'' signifie qu'on considère le
+  nombre formaté en entier, ceci est incorrect vis-à-vis des règles d'orthographe
   en vigueur,\\
   \pkgopt{multiple l-last}& pour marquer le pluriel lorsque le nombre considéré est multiplié par au moins 2
-  et est \emph{\textbf{l}ocalement} en dernière position, où ``localement'' siginifie qu'on considère
+  et est \emph{\textbf{l}ocalement} en dernière position, où ``localement'' signifie qu'on considère
   seulement la portion du nombre qui multiplie soit l'unité, soit un \meta{\(n\)}illion ou un
   \meta{\(n\)}illiard~; ceci est la convention en vigueur pour le pluriel de ``vingt'' et de ``cent''
   lorsque le nombre formaté a une valeur cardinale,\\
@@ -741,7 +741,7 @@ traits d'union de partout.  Mettre l'option \meta{dash or space} à:\newline
   \pkgopt{traditional}&  pour sélectionner la règle d'avant la réforme de 1990,\\
   \pkgopt{1990}&  pour suivre  la recommandation de la réforme de 1990, \\
   \pkgopt{reformed}&  pour suivre  la recommandation de la dernière
-  réforme pise en charge, actuellement l'effet est le même que \textrm{1990}, ou à\\
+  réforme prise en charge, actuellement l'effet est le même que \textrm{1990}, ou à\\
   \pkgopt{always}&  pour mettre systématiquement des traits d'union de partout.\\
 \end{tabularx}
 Par défaut, l'option vaut \texttt{reformed}.
