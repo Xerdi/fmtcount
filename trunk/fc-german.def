@@ -2,7 +2,22 @@
 % German definitions (thank you to K. H. Fricke for supplying
 % this information)
 %    \begin{macrocode}
-\ProvidesFCLanguage{german}[2018/06/17]%
+\ProvidesFCLanguage{german}[2026/09/02]%
+%    \end{macrocode}
+% Swiss German has no sharp s, it writes \texttt{ss} where the German and
+% Austrian variants write \ss{} --- \texttt{dreissig} rather than
+% \texttt{drei\ss{}ig}. Rather than duplicating the whole word list, the
+% spelling is parametrised: the number and ordinal word lists below write
+% \cs{fc@german@sz}, and every entry point \cs{let}s it to
+% \cs{fc@german@sharpS} or to \cs{fc@german@ss} before building a string.
+% It has to be set by the entry points rather than once and for all, because
+% one document may well use both \texttt{german} and \texttt{german-ch}.
+%    \begin{macrocode}
+\newcommand*\fc@german@sharpS{ß}%
+\newcommand*\fc@german@ss{ss}%
+\global\let\fc@german@sharpS\fc@german@sharpS
+\global\let\fc@german@ss\fc@german@ss
+\global\let\fc@german@sz\fc@german@sharpS
 %    \end{macrocode}
 % Define macro that converts a number or count register (first
 % argument) to an ordinal, and stores the result in the
@@ -55,7 +70,7 @@
   \ifcase#1%
     \or zehn%
     \or zwanzig%
-    \or dreißig%
+    \or drei\fc@german@sz ig%
     \or vierzig%
     \or fünfzig%
     \or sechzig%
@@ -103,11 +118,20 @@
 % \cs{@ordinalstringMgerman}, \cs{@ordinalstringFgerman},
 % \cs{@ordinalstringNgerman}, \cs{@OrdinalstringMgerman},
 % \cs{@OrdinalstringFgerman}, and \cs{@OrdinalstringNgerman}.}
+% The word lists are selected by \cs{@fc@german@numberstringsetup} and by
+% \cs{@fc@german@ordinalstring}\meta{gender}\texttt{setup}, so that
+% \texttt{fc-german-ch.def} can reuse them for the Swiss spelling instead of
+% repeating them.
 %    \begin{macrocode}
-\newcommand*{\@numberstringMgerman}[2]{%
+\newcommand*\@fc@german@numberstringsetup{%
   \let\@unitstring=\@@unitstringgerman
   \let\@teenstring=\@@teenstringgerman
   \let\@tenstring=\@@tenstringgerman
+}%
+\global\let\@fc@german@numberstringsetup\@fc@german@numberstringsetup
+\newcommand*{\@numberstringMgerman}[2]{%
+  \@fc@german@numberstringsetup
+  \let\fc@german@sz\fc@german@sharpS
   \@@numberstringgerman{#1}{#2}%
 }%
 \global\let\@numberstringMgerman\@numberstringMgerman
@@ -132,45 +156,54 @@
 %    \end{macrocode}
 % As above, but for ordinals.
 %    \begin{macrocode}
-\newcommand*{\@ordinalstringMgerman}[2]{%
+\newcommand*\@fc@german@ordinalstringMsetup{%
   \let\@unitthstring=\@@unitthstringMgerman
   \let\@teenthstring=\@@teenthstringMgerman
   \let\@tenthstring=\@@tenthstringMgerman
-  \let\@unitstring=\@@unitstringgerman
-  \let\@teenstring=\@@teenstringgerman
-  \let\@tenstring=\@@tenstringgerman
+  \@fc@german@numberstringsetup
   \def\@thousandth{tausendster}%
   \def\@hundredth{hundertster}%
+}%
+\global\let\@fc@german@ordinalstringMsetup\@fc@german@ordinalstringMsetup
+\newcommand*{\@ordinalstringMgerman}[2]{%
+  \@fc@german@ordinalstringMsetup
+  \let\fc@german@sz\fc@german@sharpS
   \@@ordinalstringgerman{#1}{#2}%
 }%
 \global\let\@ordinalstringMgerman\@ordinalstringMgerman
 %    \end{macrocode}
 % Feminine form:
 %    \begin{macrocode}
-\newcommand*{\@ordinalstringFgerman}[2]{%
+\newcommand*\@fc@german@ordinalstringFsetup{%
   \let\@unitthstring=\@@unitthstringFgerman
   \let\@teenthstring=\@@teenthstringFgerman
   \let\@tenthstring=\@@tenthstringFgerman
-  \let\@unitstring=\@@unitstringgerman
-  \let\@teenstring=\@@teenstringgerman
-  \let\@tenstring=\@@tenstringgerman
+  \@fc@german@numberstringsetup
   \def\@thousandth{tausendste}%
   \def\@hundredth{hundertste}%
+}%
+\global\let\@fc@german@ordinalstringFsetup\@fc@german@ordinalstringFsetup
+\newcommand*{\@ordinalstringFgerman}[2]{%
+  \@fc@german@ordinalstringFsetup
+  \let\fc@german@sz\fc@german@sharpS
   \@@ordinalstringgerman{#1}{#2}%
 }%
 \global\let\@ordinalstringFgerman\@ordinalstringFgerman
 %    \end{macrocode}
 % Neuter form:
 %    \begin{macrocode}
-\newcommand*{\@ordinalstringNgerman}[2]{%
+\newcommand*\@fc@german@ordinalstringNsetup{%
   \let\@unitthstring=\@@unitthstringNgerman
   \let\@teenthstring=\@@teenthstringNgerman
   \let\@tenthstring=\@@tenthstringNgerman
-  \let\@unitstring=\@@unitstringgerman
-  \let\@teenstring=\@@teenstringgerman
-  \let\@tenstring=\@@tenstringgerman
+  \@fc@german@numberstringsetup
   \def\@thousandth{tausendstes}%
   \def\@hundredth{hunderstes}%
+}%
+\global\let\@fc@german@ordinalstringNsetup\@fc@german@ordinalstringNsetup
+\newcommand*{\@ordinalstringNgerman}[2]{%
+  \@fc@german@ordinalstringNsetup
+  \let\fc@german@sz\fc@german@sharpS
   \@@ordinalstringgerman{#1}{#2}%
 }%
 \global\let\@ordinalstringNgerman\@ordinalstringNgerman
@@ -227,7 +260,7 @@
   \ifcase#1%
     \or zehnter%
     \or zwanzigster%
-    \or dreißigster%
+    \or drei\fc@german@sz igster%
     \or vierzigster%
     \or fünfzigster%
     \or sechzigster%
@@ -280,7 +313,7 @@
   \ifcase#1%
     \or zehnte%
     \or zwanzigste%
-    \or dreißigste%
+    \or drei\fc@german@sz igste%
     \or vierzigste%
     \or fünfzigste%
     \or sechzigste%
@@ -335,7 +368,7 @@
   \ifcase#1%
     \or zehntes%
     \or zwanzigstes%
-    \or dreißigstes%
+    \or drei\fc@german@sz igstes%
     \or vierzigstes%
     \or fünfzigstes%
     \or sechzigstes%

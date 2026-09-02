@@ -1,0 +1,12 @@
+% \subsubsection{fc-german-ch-1901.def}
+% Swiss German, one of the dialect names provided by the \styfmt{babel-german}
+% package (pre-1996 orthography).
+%    \begin{macrocode}
+\ProvidesFCLanguage{german-ch-1901}[2026/09/02]%
+%    \end{macrocode}
+% Load fc-german-ch.def if not already loaded, and use its definitions
+%    \begin{macrocode}
+\FCloadlang{german-ch}%
+\FCaliaslang{german-ch-1901}{germanswiss}%
+%    \end{macrocode}
+% \setcounter{CodelineNo}{0}

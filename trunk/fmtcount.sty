@@ -113,6 +113,42 @@
 }
 %    \end{macrocode}
 %\end{macro}
+%\begin{macro}{\FCaliaslang}
+%\changes{3.13}{2026/09/02}{new}
+%\begin{definition}
+%\cs{FCaliaslang}\marg{alias}\marg{language}
+%\end{definition}
+% Make \meta{alias} a synonym of \meta{language}, that is to say
+% \cs{global}\cs{let} each of the fifteen \cs{@}\meta{command}\meta{gender}\meta{alias}
+% macros to its \meta{language} counterpart. The language definition file of
+% \meta{language} must have been loaded beforehand with \cs{FCloadlang}.
+% Contrary to spelling out the \cs{let}s, this also works when \meta{alias}
+% contains characters --- such as a hyphen --- that cannot appear in a
+% control sequence name written literally.
+%    \begin{macrocode}
+\newcommand*{\@FC@aliaslangmacro}[3]{%
+  \expandafter\let\expandafter\@FC@tmp@alias\csname @#1#3\endcsname
+  \expandafter\global\expandafter\let\csname @#1#2\endcsname\@FC@tmp@alias
+}
+\newcommand*{\FCaliaslang}[2]{%
+  \@FC@aliaslangmacro{ordinalM}{#1}{#2}%
+  \@FC@aliaslangmacro{ordinalF}{#1}{#2}%
+  \@FC@aliaslangmacro{ordinalN}{#1}{#2}%
+  \@FC@aliaslangmacro{numberstringM}{#1}{#2}%
+  \@FC@aliaslangmacro{numberstringF}{#1}{#2}%
+  \@FC@aliaslangmacro{numberstringN}{#1}{#2}%
+  \@FC@aliaslangmacro{NumberstringM}{#1}{#2}%
+  \@FC@aliaslangmacro{NumberstringF}{#1}{#2}%
+  \@FC@aliaslangmacro{NumberstringN}{#1}{#2}%
+  \@FC@aliaslangmacro{ordinalstringM}{#1}{#2}%
+  \@FC@aliaslangmacro{ordinalstringF}{#1}{#2}%
+  \@FC@aliaslangmacro{ordinalstringN}{#1}{#2}%
+  \@FC@aliaslangmacro{OrdinalstringM}{#1}{#2}%
+  \@FC@aliaslangmacro{OrdinalstringF}{#1}{#2}%
+  \@FC@aliaslangmacro{OrdinalstringN}{#1}{#2}%
+}
+%    \end{macrocode}
+%\end{macro}
 %\begin{macro}{\@FC@iflangloaded}
 %\changes{2.0}{2012/06/3}{new}
 %\begin{definition}
@@ -159,6 +195,8 @@
 %    one language --- between a \cs{DeclareOption} and a \cs{ProcessOption} which is forbidden by \LaTeXe.
 %\changes{3.00}{2014/07/3}{new}
 %\changes{3.05}{2017/12/26}{Add brazilian and portuguese.}
+%\changes{3.13}{2026/09/02}{Add the German, Austrian and Swiss dialect names
+% introduced by \styfmt{babel-german}.}
 %    \begin{macrocode}
 \newcommand*\fc@supported@language@list{%
 english,%
@@ -177,6 +215,18 @@ german,%
 germanb,%
 ngerman,%
 ngermanb,%
+german-de,%
+german-germany,%
+german-at,%
+german-austria,%
+german-de-1901,%
+german-germany-1901,%
+german-at-1901,%
+german-austria-1901,%
+german-ch,%
+german-switzerland,%
+german-ch-1901,%
+german-switzerland-1901,%
 italian,%
 dutch}
 %    \end{macrocode}
@@ -281,6 +331,18 @@ dutch}
 \@tempa{germanb}{german}
 \@tempa{ngermanb}{german}
 \@tempa{ngerman}{german}
+\@tempa{german-de}{german}
+\@tempa{german-germany}{german}
+\@tempa{german-at}{german}
+\@tempa{german-austria}{german}
+\@tempa{german-de-1901}{german}
+\@tempa{german-germany-1901}{german}
+\@tempa{german-at-1901}{german}
+\@tempa{german-austria-1901}{german}
+\@tempa{german-ch}{german}
+\@tempa{german-switzerland}{german}
+\@tempa{german-ch-1901}{german}
+\@tempa{german-switzerland-1901}{german}
 \@tempa{british}{english}
 \@tempa{american}{USenglish}
 %    \end{macrocode}
@@ -1830,6 +1892,8 @@ dutch}
 %\begin{macro}{\fc@multiling}
 %\changes{2.02}{2012/10/03}{new}
 %\cs{fc@multiling}\marg{name}\marg{gender}
+%\changes{3.13}{2026/09/02}{Do not use \cs{fc@mainlang} as a fallback when it is
+% empty, as \cs{fc@multiling} would then call itself recursively for ever.}
 %\changes{3.00}{2014/07/03}{Use \cs{protect}, not \cs{string} in \cs{PackageWarning} to quote macros like
 % shown in \texttt{clsguide.pdf}}
 %    \begin{macrocode}
@@ -1851,16 +1915,25 @@ dutch}
     }%
     {%
     }%
-    \ifcsdef{@#1#2\fc@mainlang}%
-    {%
-       \csuse{@#1#2\fc@mainlang}%
-    }%
+%    \end{macrocode}
+% Beware that \cs{fc@mainlang} may be empty --- this happens when
+% \styfmt{babel} or \styfmt{polyglossia} selects a language for which
+% \styfmt{fmtcount} has no definition file and no other language was ever
+% loaded. The fallback would then be \cs{@}\meta{name}\meta{gender} with an
+% empty language appended, which is the very macro that called us, so using it
+% as a fallback would loop for ever.
+%    \begin{macrocode}
+    \ifboolexpr{ test {\ifdefempty{\fc@mainlang}}
+                 or not test {\ifcsdef{@#1#2\fc@mainlang}} }%
     {%
        \PackageWarningNoLine{fmtcount}%
        {No languages loaded at all! Loading english definitions}%
        \FCloadlang{english}%
-       \def\fc@mainlang{english}%
+       \gdef\fc@mainlang{english}%
        \csuse{@#1#2english}%
+    }%
+    {%
+       \csuse{@#1#2\fc@mainlang}%
     }%
   }%
   {%

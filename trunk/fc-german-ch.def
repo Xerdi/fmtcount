@@ -1,0 +1,104 @@
+% \subsubsection{fc-german-ch.def}
+% Swiss German, one of the dialect names provided by the \styfmt{babel-german}
+% package (post-1996 orthography).
+%    \begin{macrocode}
+\ProvidesFCLanguage{german-ch}[2026/09/02]%
+%    \end{macrocode}
+% Load fc-german.def if not already loaded
+%    \begin{macrocode}
+\FCloadlang{german}%
+%    \end{macrocode}
+% Swiss German spells \texttt{ss} where the German and Austrian variants spell
+% \ss{}, so \texttt{dreissig} rather than \texttt{drei\ss{}ig}. Everything else
+% is the same, hence the definitions below reuse the word lists of
+% \texttt{fc-german.def} through the setup macros defined there, and only
+% differ from their \texttt{german} counterparts by letting \cs{fc@german@sz}
+% to \cs{fc@german@ss}.
+%
+% The definitions are made under the name \texttt{germanswiss} rather than
+% \texttt{german-ch}, because a hyphen cannot appear in a control sequence
+% name; \cs{FCaliaslang} maps them onto the four hyphenated dialect names.
+%
+% The numeric ordinals hold no sharp s, so they are plain synonyms:
+%    \begin{macrocode}
+\global\let\@ordinalMgermanswiss\@ordinalMgerman
+\global\let\@ordinalFgermanswiss\@ordinalFgerman
+\global\let\@ordinalNgermanswiss\@ordinalNgerman
+%    \end{macrocode}
+% Numbers as text:
+%    \begin{macrocode}
+\newcommand*{\@numberstringMgermanswiss}[2]{%
+  \@fc@german@numberstringsetup
+  \let\fc@german@sz\fc@german@ss
+  \@@numberstringgerman{#1}{#2}%
+}%
+\global\let\@numberstringMgermanswiss\@numberstringMgermanswiss
+\global\let\@numberstringFgermanswiss=\@numberstringMgermanswiss
+\global\let\@numberstringNgermanswiss=\@numberstringMgermanswiss
+%    \end{macrocode}
+% As above, but initial letters in upper case:
+%    \begin{macrocode}
+\newcommand*{\@NumberstringMgermanswiss}[2]{%
+  \@numberstringMgermanswiss{#1}{\@@num@str}%
+  \edef#2{\noexpand\MakeUppercase\expandonce\@@num@str}%
+}%
+\global\let\@NumberstringMgermanswiss\@NumberstringMgermanswiss
+\global\let\@NumberstringFgermanswiss=\@NumberstringMgermanswiss
+\global\let\@NumberstringNgermanswiss=\@NumberstringMgermanswiss
+%    \end{macrocode}
+% Ordinals as text, masculine:
+%    \begin{macrocode}
+\newcommand*{\@ordinalstringMgermanswiss}[2]{%
+  \@fc@german@ordinalstringMsetup
+  \let\fc@german@sz\fc@german@ss
+  \@@ordinalstringgerman{#1}{#2}%
+}%
+\global\let\@ordinalstringMgermanswiss\@ordinalstringMgermanswiss
+%    \end{macrocode}
+% Feminine form:
+%    \begin{macrocode}
+\newcommand*{\@ordinalstringFgermanswiss}[2]{%
+  \@fc@german@ordinalstringFsetup
+  \let\fc@german@sz\fc@german@ss
+  \@@ordinalstringgerman{#1}{#2}%
+}%
+\global\let\@ordinalstringFgermanswiss\@ordinalstringFgermanswiss
+%    \end{macrocode}
+% Neuter form:
+%    \begin{macrocode}
+\newcommand*{\@ordinalstringNgermanswiss}[2]{%
+  \@fc@german@ordinalstringNsetup
+  \let\fc@german@sz\fc@german@ss
+  \@@ordinalstringgerman{#1}{#2}%
+}%
+\global\let\@ordinalstringNgermanswiss\@ordinalstringNgermanswiss
+%    \end{macrocode}
+% As above, but with initial letters in upper case.
+%    \begin{macrocode}
+\newcommand*{\@OrdinalstringMgermanswiss}[2]{%
+ \@ordinalstringMgermanswiss{#1}{\@@num@str}%
+ \edef#2{\noexpand\MakeUppercase\expandonce\@@num@str}%
+}%
+\global\let\@OrdinalstringMgermanswiss\@OrdinalstringMgermanswiss
+%    \end{macrocode}
+% Feminine form:
+%    \begin{macrocode}
+\newcommand*{\@OrdinalstringFgermanswiss}[2]{%
+ \@ordinalstringFgermanswiss{#1}{\@@num@str}%
+ \edef#2{\noexpand\MakeUppercase\expandonce\@@num@str}%
+}%
+\global\let\@OrdinalstringFgermanswiss\@OrdinalstringFgermanswiss
+%    \end{macrocode}
+% Neuter form:
+%    \begin{macrocode}
+\newcommand*{\@OrdinalstringNgermanswiss}[2]{%
+ \@ordinalstringNgermanswiss{#1}{\@@num@str}%
+ \edef#2{\noexpand\MakeUppercase\expandonce\@@num@str}%
+}%
+\global\let\@OrdinalstringNgermanswiss\@OrdinalstringNgermanswiss
+%    \end{macrocode}
+% Finally make \verb|german-ch| use these definitions.
+%    \begin{macrocode}
+\FCaliaslang{german-ch}{germanswiss}%
+%    \end{macrocode}
+% \setcounter{CodelineNo}{0}
