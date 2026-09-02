@@ -64,7 +64,7 @@ html	: fmtcount-manual.html
 
 clean	:
 	command rm -f fmtcount.{aux,glo,idx,ilg,ind,log,out,toc,gls}
-	command rm -f *.{css,4ct,4tc,aux,dvi,glo,idv,idx,lg,log,tmp,xref,ind,out,toc,4dx,4ix,ilg}
+	command rm -f *.{css,4ct,4tc,aux,dvi,glo,idv,idx,lg,log,tmp,xref,ind,out,ps,toc,4dx,4ix,ilg}
 	command rm -f idxmake.{log,dvi}
 
 .PHONY: realclean squeaky

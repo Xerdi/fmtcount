@@ -1,0 +1,16 @@
+% \subsubsection{fc-german-germany.def}
+% Dialect name provided by the \styfmt{babel-german} package (post-1996 orthography).
+%    \begin{macrocode}
+\ProvidesFCLanguage{german-germany}[2026/09/02]%
+%    \end{macrocode}
+% Load fc-german.def if not already loaded
+%    \begin{macrocode}
+\FCloadlang{german}%
+%    \end{macrocode}
+% Set \verb|german-germany| to be equivalent to \verb|german|: the number and
+% ordinal words are not affected by the 1996 spelling reform, and the German
+% and Austrian variants spell them the same way as \verb|german| does.
+%    \begin{macrocode}
+\FCaliaslang{german-germany}{german}%
+%    \end{macrocode}
+% \setcounter{CodelineNo}{0}
