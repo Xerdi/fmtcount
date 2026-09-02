@@ -15,6 +15,7 @@ README
 *.tex
 *.out
 *.pdf
+*.ps
 *.toc
 *.zip
 doc
@@ -22,3 +23,16 @@ fmtcount
 scripts
 source
 tex
+*.4ct
+*.4dx
+*.4ix
+*.4tc
+*.css
+*.dvi
+*.html
+*.idv
+*.lg
+*.perl
+*.tmp
+*.xref
+fmtcount-manual*.png
