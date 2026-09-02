@@ -530,11 +530,30 @@ Some \meta{language} are synonyms, here is a table:
     english& british\\\hline
     french&frenchb\\\hline
             &germanb\\
-    german&ngerman\\
-            &ngermanb\\\hline
+            &ngerman\\
+            &ngermanb\\
+            &german-de\\
+    german&german-germany\\
+            &german-at\\
+            &german-austria\\
+            &german-de-1901\\
+            &german-germany-1901\\
+            &german-at-1901\\
+            &german-austria-1901\\
+            &german-ch\\
+            &german-switzerland\\
+            &german-ch-1901\\
+            &german-switzerland-1901\\\hline
     USenglish&american\\\hline
   \end{tabular}
 \end{center}
+
+Beware that the four Swiss dialects --- \texttt{german-ch},
+\texttt{german-switzerland} and their \texttt{-1901} variants --- are synonyms of
+\texttt{german} as far as these options are concerned, but not as far as spelling
+is concerned: Swiss German writes \texttt{ss} where the German and Austrian
+dialects write \ss{}, so \cs{numberstring} gives \texttt{dreissig} rather than
+\texttt{drei\ss{}ig}.
 
 \subsection{Options for French}
 \label{sec:options-french}
