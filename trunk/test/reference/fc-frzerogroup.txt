@@ -1,0 +1,93 @@
+dash or space=always
+2000005
+[deux-millions-cinq]
+[deux-millions-cinquième]
+6000254
+[six-millions-deux-cent-cinquante-quatre]
+[six-millions-deux-cent-cinquante-quatrième]
+3000080
+[trois-millions-quatre-vingts]
+[trois-millions-quatre-vingtième]
+2000005000
+[deux-milliards-cinq-mille]
+[deux-milliards-cinq-millième]
+21000000100
+[vingt-et-un-milliards-cent]
+[vingt-et-un-milliards-centième]
+1000000000000005
+[un-million-de-milliards-cinq]
+[un-million-de-milliards-cinquième]
+5026300
+[cinq-millions-vingt-six-mille-trois-cents]
+[cinq-millions-vingt-six-mille-trois-centième]
+2001005
+[deux-millions-mille-cinq]
+[deux-millions-mille-cinquième]
+2000000
+[deux-millions]
+[deux-millionième]
+
+dash or space=reformed
+2000005
+[deux millions cinq]
+[deux millions cinquième]
+6000254
+[six millions deux-cent-cinquante-quatre]
+[six millions deux-cent-cinquante-quatrième]
+3000080
+[trois millions quatre-vingts]
+[trois millions quatre-vingtième]
+2000005000
+[deux milliards cinq-mille]
+[deux milliards cinq-millième]
+21000000100
+[vingt-et-un milliards cent]
+[vingt-et-un milliards centième]
+1000000000000005
+[un million de milliards cinq]
+
+1
+
+[un million de milliards cinquième]
+5026300
+[cinq millions vingt-six-mille-trois-cents]
+[cinq millions vingt-six-mille-trois-centième]
+2001005
+[deux millions mille-cinq]
+[deux millions mille-cinquième]
+2000000
+[deux millions]
+[deux millionième]
+
+dash or space=traditional
+2000005
+[deux millions cinq]
+[deux millions cinquième]
+6000254
+[six millions deux cent cinquante-quatre]
+[six millions deux cent cinquante-quatrième]
+3000080
+[trois millions quatre-vingts]
+[trois millions quatre-vingtième]
+2000005000
+[deux milliards cinq mille]
+[deux milliards cinq millième]
+21000000100
+[vingt et un milliards cent]
+[vingt et un milliards centième]
+1000000000000005
+[un million de milliards cinq]
+[un million de milliards cinquième]
+5026300
+[cinq millions vingt-six mille trois cents]
+[cinq millions vingt-six mille trois centième]
+2001005
+[deux millions mille cinq]
+[deux millions mille cinquième]
+2000000
+[deux millions]
+[deux millionième]
+
+2
+
+
