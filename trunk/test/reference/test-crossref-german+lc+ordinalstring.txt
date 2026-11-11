@@ -20,7 +20,7 @@ Test 4
 
 3
 
-fünfter
+fünfter
 Test 5
 
 3
@@ -55,7 +55,7 @@ Test 11
 
 3
 
-zwölfter
+zwölfter
 Test 12
 
 3
@@ -70,7 +70,7 @@ Test 14
 
 3
 
-fünfzehnter
+fünfzehnter
 Test 15
 
 3
@@ -121,8 +121,8 @@ Test 23
 
 Sample
 
-Test cross-reference to section erster, zweiter, dritter, vierter, fünfter, sechster,
-siebter, achter, neunter, zehnter, elfter, zwölfter, dreizehnter, vierzehnter, fünfzehnter,
+Test cross-reference to section erster, zweiter, dritter, vierter, fünfter, sechster,
+siebter, achter, neunter, zehnter, elfter, zwölfter, dreizehnter, vierzehnter, fünfzehnter,
 sechzehnter, siebzehnter, achtzehnter, neunzehnter, zwanzigster, einundzwanzigster,
 zweiundzwanzigster, and dreiundzwanzigster.
 
@@ -140,7 +140,7 @@ vierter
 
 Test 4
 
-fünfter
+fünfter
 
 Test 5
 
@@ -168,7 +168,7 @@ elfter
 
 Test 11
 
-zwölfter
+zwölfter
 
 Test 12
 
@@ -180,7 +180,7 @@ vierzehnter
 
 Test 14
 
-fünfzehnter
+fünfzehnter
 
 Test 15
 

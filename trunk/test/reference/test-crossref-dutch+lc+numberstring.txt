@@ -98,12 +98,12 @@ Test 21
 
 3
 
-tweeëntwintig
+tweeëntwintig
 Test 22
 
 3
 
-drieëntwintig
+drieëntwintig
 Test 23
 
 3
@@ -116,7 +116,7 @@ Sample
 
 Test cross-reference to section een, twee, drie, vier, vijf, zes, zeven, acht, negen,
 tien, elf, twaalf, dertien, veertien, vijftien, zestien, zeventien, achttien, negentien,
-twintig, eenentwintig, tweeëntwintig, and drieëntwintig.
+twintig, eenentwintig, tweeëntwintig, and drieëntwintig.
 
 2
 
@@ -199,11 +199,11 @@ eenentwintig
 
 Test 21
 
-tweeëntwintig
+tweeëntwintig
 
 Test 22
 
-drieëntwintig
+drieëntwintig
 
 Test 23
 3

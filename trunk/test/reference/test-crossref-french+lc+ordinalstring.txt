@@ -5,112 +5,112 @@ Sample
 
 2
 
-deuxième
+deuxième
 Test 2
 
 3
 
-troisième
+troisième
 Test 3
 
 3
 
-quatrième
+quatrième
 Test 4
 
 3
 
-cinquième
+cinquième
 Test 5
 
 3
 
-sixième
+sixième
 Test 6
 
 3
 
-septième
+septième
 Test 7
 
 3
 
-huitième
+huitième
 Test 8
 
 3
 
-neuvième
+neuvième
 Test 9
 
 3
 
-dixième
+dixième
 Test 10
 
 3
 
-onzième
+onzième
 Test 11
 
 3
 
-douzième
+douzième
 Test 12
 
 3
 
-treizième
+treizième
 Test 13
 
 3
 
-quatorzième
+quatorzième
 Test 14
 
 3
 
-quinzième
+quinzième
 Test 15
 
 3
 
-seizième
+seizième
 Test 16
 
 3
 
-dix-septième
+dix-septième
 Test 17
 
 3
 
-dix-huitième
+dix-huitième
 Test 18
 
 3
 
-dix-neuvième
+dix-neuvième
 Test 19
 
 3
 
-vingtième
+vingtième
 Test 20
 
 3
 
-vingt-et-unième
+vingt-et-unième
 Test 21
 
 3
 
-vingt-deuxième
+vingt-deuxième
 Test 22
 
 3
 
-vingt-troisième
+vingt-troisième
 Test 23
 
 3
@@ -121,93 +121,95 @@ Test 23
 
 Sample
 
-Test cross-reference to section premier, deuxième, troisième, quatrième, cinquième, sixième, septième, huitième, neuvième, dixième, onzième, douzième,
-treizième, quatorzième, quinzième, seizième, dix-septième, dix-huitième, dixneuvième, vingtième, vingt-et-unième, vingt-deuxième, and vingt-troisième.
+Test cross-reference to section premier, deuxième, troisième, quatrième, cinquième,
+sixième, septième, huitième, neuvième, dixième, onzième, douzième, treizième,
+quatorzième, quinzième, seizième, dix-septième, dix-huitième, dix-neuvième,
+vingtième, vingt-et-unième, vingt-deuxième, and vingt-troisième.
 
 2
 
-deuxième
+deuxième
 
 Test 2
 
-troisième
+troisième
 
 Test 3
 
-quatrième
+quatrième
 
 Test 4
 
-cinquième
+cinquième
 
 Test 5
 
-sixième
+sixième
 
 Test 6
 
-septième
+septième
 
 Test 7
 
-huitième
+huitième
 
 Test 8
 
-neuvième
+neuvième
 
 Test 9
 
-dixième
+dixième
 
 Test 10
 
-onzième
+onzième
 
 Test 11
 
-douzième
+douzième
 
 Test 12
 
-treizième
+treizième
 
 Test 13
 
-quatorzième
-quinzième
-seizième
+quatorzième
+quinzième
+seizième
 
 Test 14
 Test 15
 
 Test 16
 
-dix-septième
+dix-septième
 
 Test 17
 
-dix-huitième
+dix-huitième
 
 Test 18
 
-dix-neuvième
+dix-neuvième
 
 Test 19
 
-vingtième
+vingtième
 
 Test 20
 
-vingt-et-unième
+vingt-et-unième
 
 Test 21
 
-vingt-deuxième
+vingt-deuxième
 
 Test 22
 
-vingt-troisième
+vingt-troisième
 
 Test 23
 3

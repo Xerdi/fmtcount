@@ -105,12 +105,12 @@ Test 21
 
 3
 
-tweeëntwintigste
+tweeëntwintigste
 Test 22
 
 3
 
-drieëntwintigste
+drieëntwintigste
 Test 23
 
 3
@@ -123,8 +123,8 @@ Sample
 
 Test cross-reference to section eerste, tweede, derde, vierde, vijfde, zesde, zevende,
 achtste, negende, tiende, elfde, twaalfde, dertiende, veertiende, vijftiende, zestiende,
-zeventiende, achttiende, negentiende, twintigste, eenentwintigste, tweeëntwintigste,
-and drieëntwintigste.
+zeventiende, achttiende, negentiende, twintigste, eenentwintigste, tweeëntwintigste,
+and drieëntwintigste.
 
 2
 
@@ -206,11 +206,11 @@ eenentwintigste
 
 Test 21
 
-tweeëntwintigste
+tweeëntwintigste
 
 Test 22
 
-drieëntwintigste
+drieëntwintigste
 
 Test 23
 3
