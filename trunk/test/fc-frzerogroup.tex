@@ -1,0 +1,42 @@
+% This file is public domain
+%
+% Regression test for issue 23: in French, a group of three zero digits
+% directly after a million/milliard group made the separator in front of the
+% next non zero group disappear, e.g. 2000005 gave "deux millionscinq".
+%
+% Every result is put in an \mbox on a line of its own, so that TeX does not
+% hyphenate it at a line end: pdftotext drops such a hyphen and the test would
+% then compare an artefact of the text extractor instead of fmtcount's output.
+
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[french]{fmtcount}
+\usepackage[margin=2cm]{geometry}
+\setlength{\parindent}{0pt}
+\newcommand*\testnum[1]{%
+  #1\par
+  \mbox{[\numberstringnum{#1}]}\par
+  \mbox{[\ordinalstringnum{#1}]}\par
+  \medskip}
+\newcommand*\testmode[1]{%
+  \fmtcountsetoptions{french={dash or space=#1}}%
+  \section*{dash or space=#1}
+  % issue 23 as reported: zero thousands group
+  \testnum{2000005}
+  \testnum{6000254}
+  \testnum{3000080}
+  % zero group after milliard, and two zero groups in a row
+  \testnum{2000005000}
+  \testnum{21000000100}
+  % zero groups after "million de milliards" (recursive scale)
+  \testnum{1000000000000005}
+  % controls: no zero group after the million, already worked before
+  \testnum{5026300}
+  \testnum{2001005}
+  \testnum{2000000}
+}
+\begin{document}
+\testmode{always}
+\testmode{reformed}
+\testmode{traditional}
+\end{document}

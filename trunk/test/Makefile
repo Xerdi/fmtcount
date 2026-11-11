@@ -53,7 +53,7 @@ CROSSREF_TESTS:=$(patsubst %, test-crossref-%,$(foreach LANG,$(LANG_crossref),$(
 
 # Tests with pdflatex test engine
 #------------------------------------------------------------------------------------------------------------
-LATEX_TESTS:=fc-samp fc-frlargenum $(CROSSREF_TESTS)
+LATEX_TESTS:=fc-samp fc-frlargenum fc-frzerogroup $(CROSSREF_TESTS)
 
 # Tests with xelatex sample-polyglossia
 #------------------------------------------------------------------------------------------------------------
