@@ -1593,9 +1593,13 @@ z\'ero%
 %    \begin{macrocode}
        \fc@muladdfrench\@tempt\@tempd\@tempb
 %    \end{macrocode}
-% Then iterate.
+% Then iterate. \cs{count8} must hold the power type of the last \emph{non zero} group that went into
+% \cs{@tempa}, because that is what decides the separator in front of the next non zero group. A group
+% of three zero digits yields power type~\(0\), so it must not overwrite \cs{count8}: otherwise with
+% \(2\,000\,005\) the zero thousands group would reset it and the units would be glued to ``millions''
+% without any space or dash, giving ``deux millionscinq''.
 %    \begin{macrocode}
-       \count8\count9 %
+       \ifnum\@tempt>0 \count8\count9 \fi
        \advance\count0 by -3 %
        \ifnum\count6>\count0 \else
     \repeat
