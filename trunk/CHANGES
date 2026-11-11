@@ -1,5 +1,22 @@
 fmtcount package versions:
 
+Version 3.13
+
+* Support the babel-german dialect names (german-de, german-at, german-ch, ...),
+  with ss instead of the sharp s for the Swiss variants (issue #21, thanks to
+  lemzwerg)
+
+* Fix infinite loop when no fmtcount language is loaded
+
+* Fix missing space or dash after million/milliard in French when the next
+  group of three digits is zero (issue #23, thanks to paramoustache)
+
+* Fix French text in math mode (thanks to quark67)
+
+* Fix typos, examples and a dead link in the documentation (thanks to quark67)
+
+* Make the test suite independent of the poppler version
+
 Version 3.12
 
 * Implement ordinals for Dutch
