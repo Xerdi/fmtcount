@@ -17,7 +17,7 @@ vierTest 4
 
 3
 
-fünfTest 5
+fünfTest 5
 
 3
 
@@ -50,7 +50,7 @@ elf Test 11
 
 3
 
-zwölf
+zwölf
 Test 12
 
 3
@@ -65,7 +65,7 @@ Test 14
 
 3
 
-fünfzehn
+fünfzehn
 Test 15
 
 3
@@ -116,8 +116,8 @@ Test 23
 
 Sample
 
-Test cross-reference to section eins, zwei, drei, vier, fünf, sechs, sieben, acht,
-neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn,
+Test cross-reference to section eins, zwei, drei, vier, fünf, sechs, sieben, acht,
+neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn,
 neunzehn, zwanzig, einundzwanzig, zweiundzwanzig, and dreiundzwanzig.
 
 2
@@ -134,7 +134,7 @@ vier
 
 Test 4
 
-fünf
+fünf
 
 Test 5
 
@@ -162,7 +162,7 @@ elf
 
 Test 11
 
-zwölf
+zwölf
 
 Test 12
 
@@ -174,7 +174,7 @@ vierzehn
 
 Test 14
 
-fünfzehn
+fünfzehn
 
 Test 15
 

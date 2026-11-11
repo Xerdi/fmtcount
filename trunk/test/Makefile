@@ -159,12 +159,25 @@ echo_pdftest:
 	@echo '== Begin target pdftests'
 	@echo $(DASHES)
 
+# Normalise both the freshly extracted text and the reference before comparing
+# them, so that the test is about what fmtcount typeset rather than about where
+# pdftotext happened to break a line -- poppler 24 and 26 disagree about that.
+# See normalize-pdftext.awk. Called from within the pdftests directory; $(1) is
+# the test base name. The raw $(1).txt is kept, overwrite_pdftests copies that
+# one into reference/.
+PDFTEXT_NORMALIZE:=normalize-pdftext.awk
+define NORMALIZE_PDFTEXT
+awk -f ../$(PDFTEXT_NORMALIZE) $(1).txt > $(1)-norm.txt; \
+	awk -f ../$(PDFTEXT_NORMALIZE) ../reference/$(1).txt > $(1)-refnorm.txt
+endef
+
 define PDF_ACTIONS
 	cd pdftests; \
 	if latexmk --interaction=nonstopmode $(1) ../$<; \
 	then \
 		pdftotext $*.pdf  $*.txt; \
-		if diff -abs $*.txt ../reference/$*.txt; then \
+		$(call NORMALIZE_PDFTEXT,$*); \
+		if diff -abs $*-norm.txt $*-refnorm.txt; then \
 			echo "Test $*: ok" >> ../pdftests.log; \
 		else echo "Test $*: failed" >> ../pdftests.log; \
 		fi; \
@@ -181,7 +194,8 @@ define PDF_ACTIONS_AS
 	if latexmk --interaction=nonstopmode $(1) ../$<; \
 	then \
 		pdftotext $(2).pdf  $(2).txt; \
-		if diff -abs $(2).txt ../reference/$(2).txt; then \
+		$(call NORMALIZE_PDFTEXT,$(2)); \
+		if diff -abs $(2)-norm.txt $(2)-refnorm.txt; then \
 			echo "Test $(2): ok" >> ../pdftests.log; \
 		else echo "Test $(2): failed" >> ../pdftests.log; \
 		fi; \
@@ -439,7 +453,8 @@ overwrite_pdftests:
 		cp -f pdftests/$$1.txt reference/$$1.txt; \
 	}; \
 	for w in $(PDF_TESTS); do \
-		if diff -abs pdftests/$$w.txt reference/$$w.txt > /dev/null; \
+		if diff -abs <(awk -f $(PDFTEXT_NORMALIZE) pdftests/$$w.txt) \
+			<(awk -f $(PDFTEXT_NORMALIZE) reference/$$w.txt) > /dev/null; \
 		then echo "Test $$w ok"; else \
 			if [ $$o == no ]; then \
 				echo "Overwrite reference of test $$w ?"; \
